@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import {
   DndContext,
   closestCenter,
@@ -21,35 +21,93 @@ import { initialProjects } from '@/data/projects';
 import { ProjectCard } from './ProjectCard';
 import { ProjectModal } from './ProjectModal';
 
-const STORAGE_KEY = 'project-board-data';
+const LOCAL_STORAGE_KEY = 'project-board-data';
 
 export function ProjectBoard() {
   const [projects, setProjects] = useState<Project[]>([]);
   const [activeTab, setActiveTab] = useState<ProjectCategory>('work');
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
   const [isLoaded, setIsLoaded] = useState(false);
+  const [isSaving, setIsSaving] = useState(false);
+  const [lastSaved, setLastSaved] = useState<Date | null>(null);
+  const [syncError, setSyncError] = useState<string | null>(null);
 
-  // Load from localStorage on mount
-  useEffect(() => {
-    const saved = localStorage.getItem(STORAGE_KEY);
-    if (saved) {
-      try {
-        setProjects(JSON.parse(saved));
-      } catch {
+  // Fetch from API
+  const fetchProjects = useCallback(async () => {
+    try {
+      const response = await fetch('/api/projects');
+      if (response.ok) {
+        const data = await response.json();
+        if (data.projects && data.projects.length > 0) {
+          setProjects(data.projects);
+          // Also save to localStorage as cache
+          localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(data.projects));
+          setSyncError(null);
+          return;
+        }
+      }
+      // Fall back to localStorage or initial data
+      const cached = localStorage.getItem(LOCAL_STORAGE_KEY);
+      if (cached) {
+        setProjects(JSON.parse(cached));
+      } else {
         setProjects(initialProjects);
       }
-    } else {
-      setProjects(initialProjects);
+    } catch (error) {
+      console.error('Error fetching projects:', error);
+      setSyncError('Failed to load from server');
+      // Fall back to localStorage
+      const cached = localStorage.getItem(LOCAL_STORAGE_KEY);
+      if (cached) {
+        setProjects(JSON.parse(cached));
+      } else {
+        setProjects(initialProjects);
+      }
     }
-    setIsLoaded(true);
   }, []);
 
-  // Save to localStorage on change
-  useEffect(() => {
-    if (isLoaded) {
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(projects));
+  // Save to API
+  const saveProjects = useCallback(async (projectsToSave: Project[]) => {
+    // Always save to localStorage first (instant)
+    localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(projectsToSave));
+    
+    // Then sync to API
+    setIsSaving(true);
+    try {
+      const response = await fetch('/api/projects', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ projects: projectsToSave }),
+      });
+      
+      if (response.ok) {
+        setLastSaved(new Date());
+        setSyncError(null);
+      } else {
+        setSyncError('Failed to sync to server');
+      }
+    } catch (error) {
+      console.error('Error saving projects:', error);
+      setSyncError('Failed to sync to server');
+    } finally {
+      setIsSaving(false);
     }
-  }, [projects, isLoaded]);
+  }, []);
+
+  // Load on mount
+  useEffect(() => {
+    fetchProjects().then(() => setIsLoaded(true));
+  }, [fetchProjects]);
+
+  // Poll for updates every 30 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (!isSaving) {
+        fetchProjects();
+      }
+    }, 30000);
+    return () => clearInterval(interval);
+  }, [fetchProjects, isSaving]);
 
   const sensors = useSensors(
     useSensor(PointerSensor, {
@@ -76,25 +134,28 @@ export function ProjectBoard() {
       const reordered = arrayMove(filteredProjects, oldIndex, newIndex);
       
       // Update order values
-      const updatedFiltered = reordered.map((p, i) => ({ ...p, order: i }));
+      const updatedFiltered = reordered.map((p, i) => ({ ...p, order: i, updatedAt: new Date().toISOString() }));
       
       // Merge back with other category
-      setProjects((prev) => {
-        const other = prev.filter((p) => p.category !== activeTab);
-        return [...other, ...updatedFiltered];
-      });
+      const newProjects = [
+        ...projects.filter((p) => p.category !== activeTab),
+        ...updatedFiltered,
+      ];
+      
+      setProjects(newProjects);
+      saveProjects(newProjects);
     }
   };
 
   const handleStatusChange = (id: string, status: ProjectStatus) => {
-    setProjects((prev) =>
-      prev.map((p) =>
-        p.id === id ? { ...p, status, updatedAt: new Date().toISOString() } : p
-      )
+    const newProjects = projects.map((p) =>
+      p.id === id ? { ...p, status, updatedAt: new Date().toISOString() } : p
     );
+    setProjects(newProjects);
     setSelectedProject((prev) =>
       prev?.id === id ? { ...prev, status, updatedAt: new Date().toISOString() } : prev
     );
+    saveProjects(newProjects);
   };
 
   const stats = {
@@ -123,8 +184,14 @@ export function ProjectBoard() {
               <p className="text-sm text-gray-500">Drag to reorder priorities • Top = Highest</p>
             </div>
             <div className="text-right text-sm text-gray-500">
-              <div>Eric 🌀</div>
-              <div className="text-xs">Last sync: {new Date().toLocaleTimeString()}</div>
+              <div className="flex items-center gap-2">
+                <span>Eric 🌀</span>
+                {isSaving && <span className="text-yellow-600">Saving...</span>}
+                {syncError && <span className="text-red-500" title={syncError}>⚠️</span>}
+              </div>
+              <div className="text-xs">
+                {lastSaved ? `Synced: ${lastSaved.toLocaleTimeString()}` : 'Not synced yet'}
+              </div>
             </div>
           </div>
 
