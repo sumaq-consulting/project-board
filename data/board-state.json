@@ -4,7 +4,7 @@
       "id": "pakistan-gift",
       "name": "Pakistan Gift Research",
       "description": "Find meaningful gift for friend in Pakistan. £60 budget. Toddler-age appropriate.",
-      "status": "blocked",
+      "status": "active",
       "category": "personal",
       "order": 0,
       "summary": "Two angles to explore: (1) Super English - play tea set, British brand, distinctly UK. (2) Super Pakistani - traditional craft, artisan piece. Both thoughtful + humorous.",
@@ -18,7 +18,7 @@
         "Present top 3-5 options"
       ],
       "createdAt": "2026-01-28T10:00:00Z",
-      "updatedAt": "2026-01-28T19:52:09.930Z"
+      "updatedAt": "2026-01-28T19:52:10.732Z"
     },
     {
       "id": "companies-house",
@@ -141,5 +141,5 @@
       "updatedAt": "2026-01-28T19:51:53.030Z"
     }
   ],
-  "updatedAt": "2026-01-28T19:52:10.469Z"
+  "updatedAt": "2026-01-28T19:52:11.089Z"
 }
