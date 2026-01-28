@@ -22,6 +22,12 @@ import { ProjectCard } from './ProjectCard';
 import { ProjectModal } from './ProjectModal';
 
 const LOCAL_STORAGE_KEY = 'project-board-data';
+const PIN_STORAGE_KEY = 'project-board-pin';
+
+function getPin(): string | null {
+  if (typeof window === 'undefined') return null;
+  return localStorage.getItem(PIN_STORAGE_KEY);
+}
 
 export function ProjectBoard() {
   const [projects, setProjects] = useState<Project[]>([]);
@@ -35,7 +41,11 @@ export function ProjectBoard() {
   // Fetch from API
   const fetchProjects = useCallback(async () => {
     try {
-      const response = await fetch('/api/projects');
+      const pin = getPin();
+      const headers: HeadersInit = {};
+      if (pin) headers['x-app-pin'] = pin;
+      
+      const response = await fetch('/api/projects', { headers });
       if (response.ok) {
         const data = await response.json();
         if (data.projects && data.projects.length > 0) {
@@ -74,9 +84,13 @@ export function ProjectBoard() {
     // Then sync to API
     setIsSaving(true);
     try {
+      const pin = getPin();
+      const headers: HeadersInit = { 'Content-Type': 'application/json' };
+      if (pin) headers['x-app-pin'] = pin;
+      
       const response = await fetch('/api/projects', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers,
         body: JSON.stringify({ projects: projectsToSave }),
       });
       
