@@ -255,11 +255,23 @@ export function ProjectBoard() {
 
       {/* Stats Bar */}
       <div className="max-w-4xl mx-auto px-4 py-3">
-        <div className="flex gap-4 text-sm">
-          <span className="text-green-600">🟢 {stats.active} Active</span>
-          <span className="text-red-600">🔴 {stats.blocked} Blocked</span>
-          <span className="text-gray-500">⚪ {stats.queued} Queued</span>
-          <span className="text-blue-600">✅ {stats.done} Done</span>
+        <div className="flex items-center justify-between">
+          <div className="flex gap-4 text-sm">
+            <span className="text-green-600">🟢 {stats.active} Active</span>
+            <span className="text-red-600">🔴 {stats.blocked} Blocked</span>
+            <span className="text-gray-500">⚪ {stats.queued} Queued</span>
+            <span className="text-blue-600">✅ {stats.done} Done</span>
+          </div>
+          <button
+            onClick={toggleHideDone}
+            className={`text-sm px-3 py-1 rounded-lg transition-colors ${
+              hideDone
+                ? 'bg-blue-100 text-blue-700 hover:bg-blue-200'
+                : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+            }`}
+          >
+            {hideDone ? '👁️ Show completed' : '🙈 Hide completed'}
+          </button>
         </div>
       </div>
 
