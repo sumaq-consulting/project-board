@@ -68,7 +68,7 @@
       "id": "project-board",
       "name": "Project Board (This Tool)",
       "description": "Simple project management tool for AI-Human collaboration. Drag-and-drop priorities.",
-      "status": "active",
+      "status": "done",
       "category": "work",
       "order": 0,
       "summary": "Building now. Will provide shared visibility on projects, priorities, and status.",
@@ -78,7 +78,7 @@
         "Iterate based on feedback"
       ],
       "createdAt": "2026-01-28T19:00:00Z",
-      "updatedAt": "2026-01-28T20:09:06.640Z",
+      "updatedAt": "2026-01-28T20:19:58.812Z",
       "summaryUrl": "https://docs.google.com/document/d/1iLFw6Jg2YZSrZh60I1Y0xBmHoqLalnGu1__Y-zfv7Qg/edit",
       "prdUrl": "https://docs.google.com/document/d/1XRkkXY7R8ClrS7htevxXFcPfhCFJTWY9qWJFUzbC4-4/edit"
     },
@@ -145,5 +145,5 @@
       "updatedAt": "2026-01-28T20:09:06.640Z"
     }
   ],
-  "updatedAt": "2026-01-28T20:17:57.649Z"
+  "updatedAt": "2026-01-28T20:19:58.954Z"
 }
