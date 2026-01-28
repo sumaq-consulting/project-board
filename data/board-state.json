@@ -24,7 +24,7 @@
       "id": "companies-house",
       "name": "Companies House Confirmation Statement",
       "description": "Directors verification needed. Review and complete confirmation statement.",
-      "status": "active",
+      "status": "blocked",
       "category": "personal",
       "order": 1,
       "blockedReason": "Waiting for Jordon to review email and provide verification details.",
@@ -33,7 +33,7 @@
         "Can you review the Companies House email and provide the required verification?"
       ],
       "createdAt": "2026-01-28T10:00:00Z",
-      "updatedAt": "2026-01-28T19:58:30.070Z"
+      "updatedAt": "2026-01-28T19:59:24.078Z"
     },
     {
       "id": "google-calendar-export",
@@ -141,5 +141,5 @@
       "updatedAt": "2026-01-28T19:51:53.030Z"
     }
   ],
-  "updatedAt": "2026-01-28T19:58:30.233Z"
+  "updatedAt": "2026-01-28T19:59:24.231Z"
 }
