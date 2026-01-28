@@ -1,0 +1,147 @@
+import { Project } from '@/types/project';
+
+export const initialProjects: Project[] = [
+  // ===== WORK PROJECTS =====
+  {
+    id: 'slack-feedback-app',
+    name: 'Slack Feedback App (Simpl Markup)',
+    description: 'Screenshot API + annotations + workflow management. Pricing: $29/workspace.',
+    status: 'active',
+    category: 'work',
+    order: 0,
+    summary: '70% complete. Launching before Peru trip (Feb 9). Screenshot capture, annotation tools, and feedback workflow.',
+    dueDate: '2026-02-09',
+    questionsForHuman: [
+      'What is the remaining 30% that needs to be completed?',
+      'Do you want me to review the codebase and identify gaps?'
+    ],
+    nextSteps: [
+      'Identify MVP vs nice-to-have features',
+      'Create launch checklist',
+      'Find beta testers / launch communities'
+    ],
+    createdAt: '2026-01-28T10:00:00Z',
+    updatedAt: '2026-01-28T19:00:00Z',
+  },
+  {
+    id: 'intel-scraper',
+    name: 'Daily Intel Scraper',
+    description: 'Automated daily scraper for Claude Code / Clawdbot security and productivity intel.',
+    status: 'done',
+    category: 'work',
+    order: 1,
+    summary: 'Completed 2026-01-28. Scrapes Reddit, GitHub, HN, X/Twitter. Includes trend tracking for topics appearing 4+ days. Runs daily at 5:45 AM UTC.',
+    createdAt: '2026-01-28T10:00:00Z',
+    updatedAt: '2026-01-28T18:00:00Z',
+  },
+  {
+    id: 'project-board',
+    name: 'Project Board (This Tool)',
+    description: 'Simple project management tool for AI-Human collaboration. Drag-and-drop priorities.',
+    status: 'active',
+    category: 'work',
+    order: 2,
+    summary: 'Building now. Will provide shared visibility on projects, priorities, and status.',
+    nextSteps: [
+      'Complete initial build',
+      'Deploy to Vercel',
+      'Iterate based on feedback'
+    ],
+    createdAt: '2026-01-28T19:00:00Z',
+    updatedAt: '2026-01-28T19:00:00Z',
+  },
+  {
+    id: 'clawdbot-maintenance',
+    name: 'Clawdbot Maintenance & Security',
+    description: 'Ongoing maintenance, security monitoring, and improvements for Clawdbot setup.',
+    status: 'queued',
+    category: 'work',
+    order: 3,
+    summary: 'Daily heartbeat + intel scraper covers security monitoring. Server healthy (132 days uptime). No immediate action needed.',
+    nextSteps: [
+      'Continue daily security reviews',
+      'Monitor trending topics for relevant tools',
+      'Token rotation (quarterly reminder)'
+    ],
+    createdAt: '2026-01-28T10:00:00Z',
+    updatedAt: '2026-01-28T18:00:00Z',
+  },
+  {
+    id: 'personal-brand',
+    name: 'Personal Brand Building',
+    description: 'Build personal brand for future consulting/services. Target: mid-2026.',
+    status: 'queued',
+    category: 'work',
+    order: 4,
+    summary: 'Deprioritized until Slack app is generating revenue. Research communities, content angles, and positioning when time comes.',
+    dueDate: '2026-06-01',
+    createdAt: '2026-01-28T10:00:00Z',
+    updatedAt: '2026-01-28T10:00:00Z',
+  },
+  
+  // ===== PERSONAL PROJECTS =====
+  {
+    id: 'pakistan-gift',
+    name: 'Pakistan Gift Research',
+    description: 'Find meaningful gift for friend in Pakistan. £60 budget. Toddler-age appropriate.',
+    status: 'active',
+    category: 'personal',
+    order: 0,
+    summary: 'Two angles to explore: (1) Super English - play tea set, British brand, distinctly UK. (2) Super Pakistani - traditional craft, artisan piece. Both thoughtful + humorous.',
+    questionsForHuman: [
+      'Any specific interests of your friend?',
+      'Preference between the two angles (English vs Pakistani)?'
+    ],
+    nextSteps: [
+      'Research gift options during downtime (lunch, early AM, weekends)',
+      'Find items that ship to Pakistan',
+      'Present top 3-5 options'
+    ],
+    createdAt: '2026-01-28T10:00:00Z',
+    updatedAt: '2026-01-28T10:00:00Z',
+  },
+  {
+    id: 'companies-house',
+    name: 'Companies House Confirmation Statement',
+    description: 'Directors verification needed. Review and complete confirmation statement.',
+    status: 'blocked',
+    category: 'personal',
+    order: 1,
+    blockedReason: 'Waiting for Jordon to review email and provide verification details.',
+    summary: 'Confirmation statement received via email. Requires directors verification. Action needed.',
+    questionsForHuman: [
+      'Can you review the Companies House email and provide the required verification?'
+    ],
+    createdAt: '2026-01-28T10:00:00Z',
+    updatedAt: '2026-01-28T10:00:00Z',
+  },
+  {
+    id: 'google-calendar-export',
+    name: 'Google Calendar Export Action',
+    description: 'Calendar action item with deadline.',
+    status: 'queued',
+    category: 'personal',
+    order: 2,
+    summary: 'Action needed by Apr 27, 2026. Details to be confirmed.',
+    dueDate: '2026-04-27',
+    createdAt: '2026-01-28T10:00:00Z',
+    updatedAt: '2026-01-28T10:00:00Z',
+  },
+  {
+    id: 'peru-trip',
+    name: 'Peru Trip Preparation',
+    description: 'Feb 9 → mid-March. 6 weeks family time with minimal work.',
+    status: 'queued',
+    category: 'personal',
+    order: 3,
+    summary: 'Ensure all critical work (Slack app launch) completed before departure. Plan minimal work mode for Eric during trip.',
+    dueDate: '2026-02-09',
+    nextSteps: [
+      'Ensure Slack app launched before Feb 9',
+      'Define "minimal work" expectations during trip',
+      'Set up monitoring for critical alerts only'
+    ],
+    createdAt: '2026-01-28T10:00:00Z',
+    updatedAt: '2026-01-28T10:00:00Z',
+  },
+];
