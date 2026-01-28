@@ -36,7 +36,7 @@
       "id": "project-board",
       "name": "Project Board (This Tool)",
       "description": "Simple project management tool for AI-Human collaboration. Drag-and-drop priorities.",
-      "status": "done",
+      "status": "active",
       "category": "work",
       "order": 2,
       "summary": "Building now. Will provide shared visibility on projects, priorities, and status.",
@@ -46,7 +46,7 @@
         "Iterate based on feedback"
       ],
       "createdAt": "2026-01-28T19:00:00Z",
-      "updatedAt": "2026-01-28T19:48:47.932Z"
+      "updatedAt": "2026-01-28T19:49:07.249Z"
     },
     {
       "id": "clawdbot-maintenance",
@@ -141,5 +141,5 @@
       "updatedAt": "2026-01-28T10:00:00Z"
     }
   ],
-  "updatedAt": "2026-01-28T19:48:48.218Z"
+  "updatedAt": "2026-01-28T19:49:07.406Z"
 }
