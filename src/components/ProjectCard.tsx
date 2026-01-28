@@ -26,15 +26,27 @@ export function ProjectCard({ project, onClick }: ProjectCardProps) {
 
   const statusConfig = STATUS_CONFIG[project.status];
 
+  // Status-based background colors (subtle tints)
+  const statusBgColors: Record<string, string> = {
+    active: 'bg-green-50 border-green-200',
+    blocked: 'bg-red-50 border-red-200',
+    queued: 'bg-gray-50 border-gray-200',
+    done: 'bg-blue-50 border-blue-200',
+  };
+
+  const bgColorClass = statusBgColors[project.status] || 'bg-white border-gray-200';
+  const isDone = project.status === 'done';
+
   return (
     <div
       ref={setNodeRef}
       style={style}
       className={`
-        bg-white rounded-lg shadow-sm border border-gray-200 p-4 mb-3
+        ${bgColorClass} rounded-lg shadow-sm border p-4 mb-3
         cursor-grab active:cursor-grabbing
         hover:shadow-md transition-shadow
         ${isDragging ? 'opacity-50 shadow-lg' : ''}
+        ${isDone ? 'opacity-75' : ''}
       `}
       onClick={onClick}
       {...attributes}
@@ -44,9 +56,9 @@ export function ProjectCard({ project, onClick }: ProjectCardProps) {
         <div className="flex-1 min-w-0">
           <div className="flex items-center gap-2 mb-1">
             <span className="text-lg">{statusConfig.emoji}</span>
-            <h3 className="font-semibold text-gray-900 truncate">{project.name}</h3>
+            <h3 className={`font-semibold truncate ${isDone ? 'text-gray-500' : 'text-gray-900'}`}>{project.name}</h3>
           </div>
-          <p className="text-sm text-gray-600 line-clamp-2">{project.description}</p>
+          <p className={`text-sm line-clamp-2 ${isDone ? 'text-gray-400' : 'text-gray-600'}`}>{project.description}</p>
         </div>
       </div>
       

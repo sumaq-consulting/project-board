@@ -23,10 +23,18 @@ import { ProjectModal } from './ProjectModal';
 
 const LOCAL_STORAGE_KEY = 'project-board-data';
 const PIN_STORAGE_KEY = 'project-board-pin';
+const HIDE_DONE_KEY = 'project-board-hide-done';
 
 function getPin(): string | null {
   if (typeof window === 'undefined') return null;
   return localStorage.getItem(PIN_STORAGE_KEY);
+}
+
+function getHideDonePreference(): boolean {
+  if (typeof window === 'undefined') return true;
+  const stored = localStorage.getItem(HIDE_DONE_KEY);
+  // Default to true (hide completed) if not set
+  return stored === null ? true : stored === 'true';
 }
 
 export function ProjectBoard() {
@@ -37,6 +45,7 @@ export function ProjectBoard() {
   const [isSaving, setIsSaving] = useState(false);
   const [lastSaved, setLastSaved] = useState<Date | null>(null);
   const [syncError, setSyncError] = useState<string | null>(null);
+  const [hideDone, setHideDone] = useState<boolean>(true);
 
   // Fetch from API
   const fetchProjects = useCallback(async () => {
@@ -110,8 +119,16 @@ export function ProjectBoard() {
 
   // Load on mount
   useEffect(() => {
+    setHideDone(getHideDonePreference());
     fetchProjects().then(() => setIsLoaded(true));
   }, [fetchProjects]);
+
+  // Persist hideDone preference
+  const toggleHideDone = () => {
+    const newValue = !hideDone;
+    setHideDone(newValue);
+    localStorage.setItem(HIDE_DONE_KEY, String(newValue));
+  };
 
   // Poll for updates every 30 seconds
   useEffect(() => {
@@ -136,6 +153,7 @@ export function ProjectBoard() {
 
   const filteredProjects = projects
     .filter((p) => p.category === activeTab)
+    .filter((p) => !hideDone || p.status !== 'done')
     .sort((a, b) => a.order - b.order);
 
   const handleDragEnd = (event: DragEndEvent) => {
