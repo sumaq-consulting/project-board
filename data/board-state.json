@@ -65,23 +65,12 @@
       "updatedAt": "2026-01-28T10:00:00Z"
     },
     {
-      "id": "intel-scraper",
-      "name": "Daily Intel Scraper",
-      "description": "Automated daily scraper for Claude Code / Clawdbot security and productivity intel.",
-      "status": "done",
-      "category": "work",
-      "order": 0,
-      "summary": "Completed 2026-01-28. Scrapes Reddit, GitHub, HN, X/Twitter. Includes trend tracking for topics appearing 4+ days. Runs daily at 5:45 AM UTC.",
-      "createdAt": "2026-01-28T10:00:00Z",
-      "updatedAt": "2026-01-28T19:51:41.572Z"
-    },
-    {
       "id": "slack-feedback-app",
       "name": "Slack Feedback App (Simpl Markup)",
       "description": "Screenshot API + annotations + workflow management. Pricing: $29/workspace.",
       "status": "active",
       "category": "work",
-      "order": 1,
+      "order": 0,
       "summary": "70% complete. Launching before Peru trip (Feb 9). Screenshot capture, annotation tools, and feedback workflow.",
       "dueDate": "2026-02-09",
       "questionsForHuman": [
@@ -94,7 +83,18 @@
         "Find beta testers / launch communities"
       ],
       "createdAt": "2026-01-28T10:00:00Z",
-      "updatedAt": "2026-01-28T19:51:41.572Z"
+      "updatedAt": "2026-01-28T19:51:43.154Z"
+    },
+    {
+      "id": "intel-scraper",
+      "name": "Daily Intel Scraper",
+      "description": "Automated daily scraper for Claude Code / Clawdbot security and productivity intel.",
+      "status": "done",
+      "category": "work",
+      "order": 1,
+      "summary": "Completed 2026-01-28. Scrapes Reddit, GitHub, HN, X/Twitter. Includes trend tracking for topics appearing 4+ days. Runs daily at 5:45 AM UTC.",
+      "createdAt": "2026-01-28T10:00:00Z",
+      "updatedAt": "2026-01-28T19:51:43.154Z"
     },
     {
       "id": "project-board",
@@ -110,7 +110,7 @@
         "Iterate based on feedback"
       ],
       "createdAt": "2026-01-28T19:00:00Z",
-      "updatedAt": "2026-01-28T19:51:41.572Z"
+      "updatedAt": "2026-01-28T19:51:43.154Z"
     },
     {
       "id": "clawdbot-maintenance",
@@ -126,7 +126,7 @@
         "Token rotation (quarterly reminder)"
       ],
       "createdAt": "2026-01-28T10:00:00Z",
-      "updatedAt": "2026-01-28T19:51:41.572Z"
+      "updatedAt": "2026-01-28T19:51:43.154Z"
     },
     {
       "id": "personal-brand",
@@ -138,8 +138,8 @@
       "summary": "Deprioritized until Slack app is generating revenue. Research communities, content angles, and positioning when time comes.",
       "dueDate": "2026-06-01",
       "createdAt": "2026-01-28T10:00:00Z",
-      "updatedAt": "2026-01-28T19:51:41.572Z"
+      "updatedAt": "2026-01-28T19:51:43.154Z"
     }
   ],
-  "updatedAt": "2026-01-28T19:51:42.223Z"
+  "updatedAt": "2026-01-28T19:51:46.079Z"
 }
