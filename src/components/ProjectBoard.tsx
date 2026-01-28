@@ -151,27 +151,34 @@ export function ProjectBoard() {
     })
   );
 
-  const filteredProjects = projects
-    .filter((p) => p.category === activeTab)
-    .filter((p) => !hideDone || p.status !== 'done')
+  // Split into main list (non-done) and completed list (done)
+  const categoryProjects = projects.filter((p) => p.category === activeTab);
+  
+  const mainProjects = categoryProjects
+    .filter((p) => p.status !== 'done')
+    .sort((a, b) => a.order - b.order);
+  
+  const completedProjects = categoryProjects
+    .filter((p) => p.status === 'done')
     .sort((a, b) => a.order - b.order);
 
   const handleDragEnd = (event: DragEndEvent) => {
     const { active, over } = event;
 
     if (over && active.id !== over.id) {
-      const oldIndex = filteredProjects.findIndex((p) => p.id === active.id);
-      const newIndex = filteredProjects.findIndex((p) => p.id === over.id);
+      const oldIndex = mainProjects.findIndex((p) => p.id === active.id);
+      const newIndex = mainProjects.findIndex((p) => p.id === over.id);
 
-      const reordered = arrayMove(filteredProjects, oldIndex, newIndex);
+      const reordered = arrayMove(mainProjects, oldIndex, newIndex);
       
-      // Update order values
-      const updatedFiltered = reordered.map((p, i) => ({ ...p, order: i, updatedAt: new Date().toISOString() }));
+      // Update order values for main projects
+      const updatedMain = reordered.map((p, i) => ({ ...p, order: i, updatedAt: new Date().toISOString() }));
       
-      // Merge back with other category
+      // Merge back: other category + updated main + completed (keeping their order)
       const newProjects = [
         ...projects.filter((p) => p.category !== activeTab),
-        ...updatedFiltered,
+        ...updatedMain,
+        ...completedProjects,
       ];
       
       setProjects(newProjects);
@@ -277,17 +284,18 @@ export function ProjectBoard() {
 
       {/* Project List */}
       <main className="max-w-4xl mx-auto px-4 pb-8">
+        {/* Main List (non-done items) */}
         <DndContext
           sensors={sensors}
           collisionDetection={closestCenter}
           onDragEnd={handleDragEnd}
         >
           <SortableContext
-            items={filteredProjects.map((p) => p.id)}
+            items={mainProjects.map((p) => p.id)}
             strategy={verticalListSortingStrategy}
           >
             <div className="space-y-0">
-              {filteredProjects.map((project, index) => (
+              {mainProjects.map((project, index) => (
                 <div key={project.id} className="relative">
                   {/* Priority indicator */}
                   <div className="absolute -left-8 top-4 text-xs text-gray-400 font-mono">
@@ -303,9 +311,32 @@ export function ProjectBoard() {
           </SortableContext>
         </DndContext>
 
-        {filteredProjects.length === 0 && (
+        {mainProjects.length === 0 && (
           <div className="text-center py-12 text-gray-500">
-            No projects in this category yet.
+            No active projects in this category.
+          </div>
+        )}
+
+        {/* Completed Section (done items) */}
+        {!hideDone && completedProjects.length > 0 && (
+          <div className="mt-8">
+            {/* Separator */}
+            <div className="flex items-center gap-3 mb-4">
+              <div className="flex-1 border-t border-gray-200"></div>
+              <span className="text-sm text-gray-400 font-medium">✅ Completed</span>
+              <div className="flex-1 border-t border-gray-200"></div>
+            </div>
+            
+            {/* Completed items (not draggable) */}
+            <div className="space-y-0 opacity-75">
+              {completedProjects.map((project) => (
+                <ProjectCard
+                  key={project.id}
+                  project={project}
+                  onClick={() => setSelectedProject(project)}
+                />
+              ))}
+            </div>
           </div>
         )}
       </main>
