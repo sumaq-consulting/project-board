@@ -15,6 +15,10 @@ export interface Project {
   dueDate?: string;
   questionsForHuman?: string[];
   nextSteps?: string[];
+  // Document links (Google Docs)
+  summaryUrl?: string;  // Link to Google Doc SUMMARY.md
+  prdUrl?: string;      // Link to Google Doc PRD.md
+  notes?: string;       // Short freeform notes
 }
 
 export const STATUS_CONFIG: Record<ProjectStatus, { emoji: string; label: string; color: string }> = {

@@ -67,6 +67,18 @@ export function ProjectCard({ project, onClick }: ProjectCardProps) {
           ❓ {project.questionsForHuman.length} question{project.questionsForHuman.length > 1 ? 's' : ''} for you
         </div>
       )}
+      
+      {/* Document links indicator */}
+      {(project.summaryUrl || project.prdUrl) && (
+        <div className="mt-2 flex gap-2">
+          {project.summaryUrl && (
+            <span className="text-xs text-blue-600 bg-blue-50 px-2 py-0.5 rounded">📊 Summary</span>
+          )}
+          {project.prdUrl && (
+            <span className="text-xs text-purple-600 bg-purple-50 px-2 py-0.5 rounded">📋 PRD</span>
+          )}
+        </div>
+      )}
     </div>
   );
 }

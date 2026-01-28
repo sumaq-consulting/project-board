@@ -89,6 +89,45 @@ export function ProjectModal({ project, onClose, onStatusChange }: ProjectModalP
             </div>
           )}
 
+          {/* Document Links */}
+          {(project.summaryUrl || project.prdUrl) && (
+            <div className="pt-4 border-t border-gray-100">
+              <h3 className="font-semibold text-gray-700 mb-2">📄 Documents</h3>
+              <div className="flex flex-wrap gap-2">
+                {project.summaryUrl && (
+                  <a
+                    href={project.summaryUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1 px-3 py-1.5 bg-blue-50 text-blue-700 rounded-lg text-sm hover:bg-blue-100 transition-colors"
+                  >
+                    📊 Executive Summary
+                    <span className="text-blue-400">↗</span>
+                  </a>
+                )}
+                {project.prdUrl && (
+                  <a
+                    href={project.prdUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1 px-3 py-1.5 bg-purple-50 text-purple-700 rounded-lg text-sm hover:bg-purple-100 transition-colors"
+                  >
+                    📋 PRD
+                    <span className="text-purple-400">↗</span>
+                  </a>
+                )}
+              </div>
+            </div>
+          )}
+
+          {/* Notes */}
+          {project.notes && (
+            <div className="pt-4 border-t border-gray-100">
+              <h3 className="font-semibold text-gray-700 mb-1">📝 Notes</h3>
+              <p className="text-gray-600 text-sm whitespace-pre-wrap">{project.notes}</p>
+            </div>
+          )}
+
           {/* Metadata */}
           <div className="pt-4 border-t border-gray-100 text-sm text-gray-500 space-y-1">
             {project.dueDate && (
