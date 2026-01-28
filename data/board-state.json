@@ -1,82 +1,6 @@
 {
   "projects": [
     {
-      "id": "slack-feedback-app",
-      "name": "Slack Feedback App (Simpl Markup)",
-      "description": "Screenshot API + annotations + workflow management. Pricing: $29/workspace.",
-      "status": "active",
-      "category": "work",
-      "order": 0,
-      "summary": "70% complete. Launching before Peru trip (Feb 9). Screenshot capture, annotation tools, and feedback workflow.",
-      "dueDate": "2026-02-09",
-      "questionsForHuman": [
-        "What is the remaining 30% that needs to be completed?",
-        "Do you want me to review the codebase and identify gaps?"
-      ],
-      "nextSteps": [
-        "Identify MVP vs nice-to-have features",
-        "Create launch checklist",
-        "Find beta testers / launch communities"
-      ],
-      "createdAt": "2026-01-28T10:00:00Z",
-      "updatedAt": "2026-01-28T19:00:00Z"
-    },
-    {
-      "id": "intel-scraper",
-      "name": "Daily Intel Scraper",
-      "description": "Automated daily scraper for Claude Code / Clawdbot security and productivity intel.",
-      "status": "done",
-      "category": "work",
-      "order": 1,
-      "summary": "Completed 2026-01-28. Scrapes Reddit, GitHub, HN, X/Twitter. Includes trend tracking for topics appearing 4+ days. Runs daily at 5:45 AM UTC.",
-      "createdAt": "2026-01-28T10:00:00Z",
-      "updatedAt": "2026-01-28T18:00:00Z"
-    },
-    {
-      "id": "project-board",
-      "name": "Project Board (This Tool)",
-      "description": "Simple project management tool for AI-Human collaboration. Drag-and-drop priorities.",
-      "status": "active",
-      "category": "work",
-      "order": 2,
-      "summary": "Building now. Will provide shared visibility on projects, priorities, and status.",
-      "nextSteps": [
-        "Complete initial build",
-        "Deploy to Vercel",
-        "Iterate based on feedback"
-      ],
-      "createdAt": "2026-01-28T19:00:00Z",
-      "updatedAt": "2026-01-28T19:00:00Z"
-    },
-    {
-      "id": "clawdbot-maintenance",
-      "name": "Clawdbot Maintenance & Security",
-      "description": "Ongoing maintenance, security monitoring, and improvements for Clawdbot setup.",
-      "status": "queued",
-      "category": "work",
-      "order": 3,
-      "summary": "Daily heartbeat + intel scraper covers security monitoring. Server healthy (132 days uptime). No immediate action needed.",
-      "nextSteps": [
-        "Continue daily security reviews",
-        "Monitor trending topics for relevant tools",
-        "Token rotation (quarterly reminder)"
-      ],
-      "createdAt": "2026-01-28T10:00:00Z",
-      "updatedAt": "2026-01-28T18:00:00Z"
-    },
-    {
-      "id": "personal-brand",
-      "name": "Personal Brand Building",
-      "description": "Build personal brand for future consulting/services. Target: mid-2026.",
-      "status": "queued",
-      "category": "work",
-      "order": 4,
-      "summary": "Deprioritized until Slack app is generating revenue. Research communities, content angles, and positioning when time comes.",
-      "dueDate": "2026-06-01",
-      "createdAt": "2026-01-28T10:00:00Z",
-      "updatedAt": "2026-01-28T10:00:00Z"
-    },
-    {
       "id": "pakistan-gift",
       "name": "Pakistan Gift Research",
       "description": "Find meaningful gift for friend in Pakistan. £60 budget. Toddler-age appropriate.",
@@ -94,7 +18,7 @@
         "Present top 3-5 options"
       ],
       "createdAt": "2026-01-28T10:00:00Z",
-      "updatedAt": "2026-01-28T10:00:00Z"
+      "updatedAt": "2026-01-28T19:52:10.732Z"
     },
     {
       "id": "companies-house",
@@ -139,7 +63,83 @@
       ],
       "createdAt": "2026-01-28T10:00:00Z",
       "updatedAt": "2026-01-28T10:00:00Z"
+    },
+    {
+      "id": "slack-feedback-app",
+      "name": "Slack Feedback App (Simpl Markup)",
+      "description": "Screenshot API + annotations + workflow management. Pricing: $29/workspace.",
+      "status": "active",
+      "category": "work",
+      "order": 0,
+      "summary": "70% complete. Launching before Peru trip (Feb 9). Screenshot capture, annotation tools, and feedback workflow.",
+      "dueDate": "2026-02-09",
+      "questionsForHuman": [
+        "What is the remaining 30% that needs to be completed?",
+        "Do you want me to review the codebase and identify gaps?"
+      ],
+      "nextSteps": [
+        "Identify MVP vs nice-to-have features",
+        "Create launch checklist",
+        "Find beta testers / launch communities"
+      ],
+      "createdAt": "2026-01-28T10:00:00Z",
+      "updatedAt": "2026-01-28T19:51:53.030Z"
+    },
+    {
+      "id": "intel-scraper",
+      "name": "Daily Intel Scraper",
+      "description": "Automated daily scraper for Claude Code / Clawdbot security and productivity intel.",
+      "status": "done",
+      "category": "work",
+      "order": 1,
+      "summary": "Completed 2026-01-28. Scrapes Reddit, GitHub, HN, X/Twitter. Includes trend tracking for topics appearing 4+ days. Runs daily at 5:45 AM UTC.",
+      "createdAt": "2026-01-28T10:00:00Z",
+      "updatedAt": "2026-01-28T19:51:53.030Z"
+    },
+    {
+      "id": "project-board",
+      "name": "Project Board (This Tool)",
+      "description": "Simple project management tool for AI-Human collaboration. Drag-and-drop priorities.",
+      "status": "active",
+      "category": "work",
+      "order": 2,
+      "summary": "Building now. Will provide shared visibility on projects, priorities, and status.",
+      "nextSteps": [
+        "Complete initial build",
+        "Deploy to Vercel",
+        "Iterate based on feedback"
+      ],
+      "createdAt": "2026-01-28T19:00:00Z",
+      "updatedAt": "2026-01-28T19:51:53.030Z"
+    },
+    {
+      "id": "clawdbot-maintenance",
+      "name": "Clawdbot Maintenance & Security",
+      "description": "Ongoing maintenance, security monitoring, and improvements for Clawdbot setup.",
+      "status": "queued",
+      "category": "work",
+      "order": 3,
+      "summary": "Daily heartbeat + intel scraper covers security monitoring. Server healthy (132 days uptime). No immediate action needed.",
+      "nextSteps": [
+        "Continue daily security reviews",
+        "Monitor trending topics for relevant tools",
+        "Token rotation (quarterly reminder)"
+      ],
+      "createdAt": "2026-01-28T10:00:00Z",
+      "updatedAt": "2026-01-28T19:51:53.030Z"
+    },
+    {
+      "id": "personal-brand",
+      "name": "Personal Brand Building",
+      "description": "Build personal brand for future consulting/services. Target: mid-2026.",
+      "status": "queued",
+      "category": "work",
+      "order": 4,
+      "summary": "Deprioritized until Slack app is generating revenue. Research communities, content angles, and positioning when time comes.",
+      "dueDate": "2026-06-01",
+      "createdAt": "2026-01-28T10:00:00Z",
+      "updatedAt": "2026-01-28T19:51:53.030Z"
     }
   ],
-  "updatedAt": "2026-01-28T19:50:00Z"
+  "updatedAt": "2026-01-28T19:52:11.089Z"
 }
