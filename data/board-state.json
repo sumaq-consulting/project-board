@@ -33,7 +33,7 @@
         "Can you review the Companies House email and provide the required verification?"
       ],
       "createdAt": "2026-01-28T10:00:00Z",
-      "updatedAt": "2026-01-28T10:00:00Z"
+      "updatedAt": "2026-01-28T19:59:24.078Z"
     },
     {
       "id": "google-calendar-export",
@@ -65,12 +65,28 @@
       "updatedAt": "2026-01-28T10:00:00Z"
     },
     {
+      "id": "project-board",
+      "name": "Project Board (This Tool)",
+      "description": "Simple project management tool for AI-Human collaboration. Drag-and-drop priorities.",
+      "status": "active",
+      "category": "work",
+      "order": 0,
+      "summary": "Building now. Will provide shared visibility on projects, priorities, and status.",
+      "nextSteps": [
+        "Complete initial build",
+        "Deploy to Vercel",
+        "Iterate based on feedback"
+      ],
+      "createdAt": "2026-01-28T19:00:00Z",
+      "updatedAt": "2026-01-28T20:09:06.640Z"
+    },
+    {
       "id": "slack-feedback-app",
       "name": "Slack Feedback App (Simpl Markup)",
       "description": "Screenshot API + annotations + workflow management. Pricing: $29/workspace.",
       "status": "active",
       "category": "work",
-      "order": 0,
+      "order": 1,
       "summary": "70% complete. Launching before Peru trip (Feb 9). Screenshot capture, annotation tools, and feedback workflow.",
       "dueDate": "2026-02-09",
       "questionsForHuman": [
@@ -83,7 +99,7 @@
         "Find beta testers / launch communities"
       ],
       "createdAt": "2026-01-28T10:00:00Z",
-      "updatedAt": "2026-01-28T19:51:53.030Z"
+      "updatedAt": "2026-01-28T20:09:06.640Z"
     },
     {
       "id": "intel-scraper",
@@ -91,26 +107,10 @@
       "description": "Automated daily scraper for Claude Code / Clawdbot security and productivity intel.",
       "status": "done",
       "category": "work",
-      "order": 1,
+      "order": 2,
       "summary": "Completed 2026-01-28. Scrapes Reddit, GitHub, HN, X/Twitter. Includes trend tracking for topics appearing 4+ days. Runs daily at 5:45 AM UTC.",
       "createdAt": "2026-01-28T10:00:00Z",
-      "updatedAt": "2026-01-28T19:51:53.030Z"
-    },
-    {
-      "id": "project-board",
-      "name": "Project Board (This Tool)",
-      "description": "Simple project management tool for AI-Human collaboration. Drag-and-drop priorities.",
-      "status": "active",
-      "category": "work",
-      "order": 2,
-      "summary": "Building now. Will provide shared visibility on projects, priorities, and status.",
-      "nextSteps": [
-        "Complete initial build",
-        "Deploy to Vercel",
-        "Iterate based on feedback"
-      ],
-      "createdAt": "2026-01-28T19:00:00Z",
-      "updatedAt": "2026-01-28T19:51:53.030Z"
+      "updatedAt": "2026-01-28T20:09:06.640Z"
     },
     {
       "id": "clawdbot-maintenance",
@@ -126,7 +126,7 @@
         "Token rotation (quarterly reminder)"
       ],
       "createdAt": "2026-01-28T10:00:00Z",
-      "updatedAt": "2026-01-28T19:51:53.030Z"
+      "updatedAt": "2026-01-28T20:09:06.640Z"
     },
     {
       "id": "personal-brand",
@@ -138,8 +138,8 @@
       "summary": "Deprioritized until Slack app is generating revenue. Research communities, content angles, and positioning when time comes.",
       "dueDate": "2026-06-01",
       "createdAt": "2026-01-28T10:00:00Z",
-      "updatedAt": "2026-01-28T19:51:53.030Z"
+      "updatedAt": "2026-01-28T20:09:06.640Z"
     }
   ],
-  "updatedAt": "2026-01-28T19:52:11.089Z"
+  "updatedAt": "2026-01-28T20:09:07.048Z"
 }
