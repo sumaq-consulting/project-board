@@ -1,6 +1,14 @@
 {
   "messages": [
     {
+      "id": "vm-20260129-094159",
+      "timestamp": "2026-01-29T09:41:59.916Z",
+      "transcript": "MBC 뉴스 이덕영입니다.",
+      "projectId": "companies-house",
+      "projectName": "Companies House Confirmation Statement",
+      "processed": false
+    },
+    {
       "id": "vm-20260129-094154",
       "timestamp": "2026-01-29T09:41:54.039Z",
       "transcript": "Okay, cool, yeah. For this company's house one, obviously I removed the ability for you to see my Gmail, but I don't like the idea of you having access to my Gmail because Gmail is where I get like receipts, I get password resets, I get like everything that's personal like mail is treated as though it is completely individual. And I think that that's dangerous if I give you access to that, like all of these security threats that we've been talking about recently. But I still want to be able to forward things to you, right? So I want to be able to forward you this email from company's house and I want you to be able to look into it. What do you think is the best way of doing this? I'm interested in how I can like forward this to a mailbox or something, or I can, I don't know, save the email somewhere. I mean, forwarding it honestly is the easiest thing. I just want to be able to forward it to a mailbox. What do you think is the best way of being able to do that? We can set up, we could, yeah. What do you think is the best way?",
