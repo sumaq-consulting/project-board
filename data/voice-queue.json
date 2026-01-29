@@ -15,7 +15,8 @@
       "transcript": "MBC 뉴스 이덕영입니다.",
       "projectId": "companies-house",
       "projectName": "Companies House Confirmation Statement",
-      "processed": false
+      "processed": true,
+      "processedAt": "2026-01-29T09:46:05.340Z"
     },
     {
       "id": "vm-20260129-094154",
