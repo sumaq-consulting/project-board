@@ -126,27 +126,46 @@ export async function GET(request: Request) {
   }
 }
 
-// POST: Submit new voice note
+// POST: Submit new voice note or text message
 export async function POST(request: Request) {
   if (!checkAuth(request)) {
     return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
   }
 
   try {
-    const formData = await request.formData();
-    const audioFile = formData.get('audio') as Blob;
-    const projectId = formData.get('projectId') as string | null;
-    const projectName = formData.get('projectName') as string | null;
+    const contentType = request.headers.get('content-type') || '';
     
-    if (!audioFile) {
-      return NextResponse.json({ error: 'No audio file provided' }, { status: 400 });
-    }
+    let transcript: string;
+    let projectId: string | null = null;
+    let projectName: string | null = null;
+    
+    // Handle JSON (text message) or FormData (voice note)
+    if (contentType.includes('application/json')) {
+      const body = await request.json();
+      transcript = body.text?.trim();
+      projectId = body.projectId || null;
+      projectName = body.projectName || null;
+      
+      if (!transcript) {
+        return NextResponse.json({ error: 'No message provided' }, { status: 400 });
+      }
+    } else {
+      // FormData with audio
+      const formData = await request.formData();
+      const audioFile = formData.get('audio') as Blob;
+      projectId = formData.get('projectId') as string | null;
+      projectName = formData.get('projectName') as string | null;
+      
+      if (!audioFile) {
+        return NextResponse.json({ error: 'No audio file provided' }, { status: 400 });
+      }
 
-    // Transcribe audio
-    const transcript = await transcribeAudio(audioFile);
-    
-    if (!transcript || transcript.trim().length === 0) {
-      return NextResponse.json({ error: 'No speech detected' }, { status: 400 });
+      // Transcribe audio
+      transcript = await transcribeAudio(audioFile);
+      
+      if (!transcript || transcript.trim().length === 0) {
+        return NextResponse.json({ error: 'No speech detected' }, { status: 400 });
+      }
     }
 
     // Generate message ID
