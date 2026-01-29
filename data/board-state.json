@@ -78,9 +78,25 @@
         "Iterate based on feedback"
       ],
       "createdAt": "2026-01-28T19:00:00Z",
-      "updatedAt": "2026-01-28T20:20:10.058Z",
+      "updatedAt": "2026-01-29T07:06:17.597Z",
       "summaryUrl": "https://docs.google.com/document/d/1iLFw6Jg2YZSrZh60I1Y0xBmHoqLalnGu1__Y-zfv7Qg/edit",
       "prdUrl": "https://docs.google.com/document/d/1XRkkXY7R8ClrS7htevxXFcPfhCFJTWY9qWJFUzbC4-4/edit"
+    },
+    {
+      "id": "clawdbot-maintenance",
+      "name": "Clawdbot Maintenance & Security",
+      "description": "Ongoing maintenance, security monitoring, and improvements for Clawdbot setup.",
+      "status": "queued",
+      "category": "work",
+      "order": 1,
+      "summary": "Daily heartbeat + intel scraper covers security monitoring. Server healthy (132 days uptime). No immediate action needed.",
+      "nextSteps": [
+        "Continue daily security reviews",
+        "Monitor trending topics for relevant tools",
+        "Token rotation (quarterly reminder)"
+      ],
+      "createdAt": "2026-01-28T10:00:00Z",
+      "updatedAt": "2026-01-29T07:06:17.597Z"
     },
     {
       "id": "slack-feedback-app",
@@ -88,7 +104,7 @@
       "description": "Screenshot API + annotations + workflow management. Pricing: $29/workspace.",
       "status": "active",
       "category": "work",
-      "order": 1,
+      "order": 2,
       "summary": "70% complete. Launching before Peru trip (Feb 9). Screenshot capture, annotation tools, and feedback workflow.",
       "dueDate": "2026-02-09",
       "questionsForHuman": [
@@ -101,9 +117,21 @@
         "Find beta testers / launch communities"
       ],
       "createdAt": "2026-01-28T10:00:00Z",
-      "updatedAt": "2026-01-28T20:09:06.640Z",
+      "updatedAt": "2026-01-29T07:06:17.597Z",
       "summaryUrl": "https://docs.google.com/document/d/1nKgm-wsqwXJxGwcw9rDx6jDUpP6JTrjlf_4KIc4hFT0/edit",
       "prdUrl": "https://docs.google.com/document/d/1zzl9OjEfTeV-34kEXfnA396cKKRuUgkFwwW0IlcvCIo/edit"
+    },
+    {
+      "id": "personal-brand",
+      "name": "Personal Brand Building",
+      "description": "Build personal brand for future consulting/services. Target: mid-2026.",
+      "status": "queued",
+      "category": "work",
+      "order": 3,
+      "summary": "Deprioritized until Slack app is generating revenue. Research communities, content angles, and positioning when time comes.",
+      "dueDate": "2026-06-01",
+      "createdAt": "2026-01-28T10:00:00Z",
+      "updatedAt": "2026-01-29T07:06:17.597Z"
     },
     {
       "id": "intel-scraper",
@@ -115,35 +143,7 @@
       "summary": "Completed 2026-01-28. Scrapes Reddit, GitHub, HN, X/Twitter. Includes trend tracking for topics appearing 4+ days. Runs daily at 5:45 AM UTC.",
       "createdAt": "2026-01-28T10:00:00Z",
       "updatedAt": "2026-01-28T20:09:06.640Z"
-    },
-    {
-      "id": "clawdbot-maintenance",
-      "name": "Clawdbot Maintenance & Security",
-      "description": "Ongoing maintenance, security monitoring, and improvements for Clawdbot setup.",
-      "status": "queued",
-      "category": "work",
-      "order": 3,
-      "summary": "Daily heartbeat + intel scraper covers security monitoring. Server healthy (132 days uptime). No immediate action needed.",
-      "nextSteps": [
-        "Continue daily security reviews",
-        "Monitor trending topics for relevant tools",
-        "Token rotation (quarterly reminder)"
-      ],
-      "createdAt": "2026-01-28T10:00:00Z",
-      "updatedAt": "2026-01-28T20:09:06.640Z"
-    },
-    {
-      "id": "personal-brand",
-      "name": "Personal Brand Building",
-      "description": "Build personal brand for future consulting/services. Target: mid-2026.",
-      "status": "queued",
-      "category": "work",
-      "order": 4,
-      "summary": "Deprioritized until Slack app is generating revenue. Research communities, content angles, and positioning when time comes.",
-      "dueDate": "2026-06-01",
-      "createdAt": "2026-01-28T10:00:00Z",
-      "updatedAt": "2026-01-28T20:09:06.640Z"
     }
   ],
-  "updatedAt": "2026-01-28T20:20:10.257Z"
+  "updatedAt": "2026-01-29T07:06:17.798Z"
 }
