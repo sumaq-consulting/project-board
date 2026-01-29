@@ -1,70 +1,6 @@
 {
   "projects": [
     {
-      "id": "pakistan-gift",
-      "name": "Pakistan Gift Research",
-      "description": "Find meaningful gift for friend in Pakistan. £60 budget. Toddler-age appropriate.",
-      "status": "active",
-      "category": "personal",
-      "order": 0,
-      "summary": "Two angles to explore: (1) Super English - play tea set, British brand, distinctly UK. (2) Super Pakistani - traditional craft, artisan piece. Both thoughtful + humorous.",
-      "questionsForHuman": [
-        "Any specific interests of your friend?",
-        "Preference between the two angles (English vs Pakistani)?"
-      ],
-      "nextSteps": [
-        "Research gift options during downtime (lunch, early AM, weekends)",
-        "Find items that ship to Pakistan",
-        "Present top 3-5 options"
-      ],
-      "createdAt": "2026-01-28T10:00:00Z",
-      "updatedAt": "2026-01-28T19:52:10.732Z"
-    },
-    {
-      "id": "companies-house",
-      "name": "Companies House Confirmation Statement",
-      "description": "Directors verification needed. Review and complete confirmation statement.",
-      "status": "blocked",
-      "category": "personal",
-      "order": 1,
-      "blockedReason": "Waiting for Jordon to review email and provide verification details.",
-      "summary": "Confirmation statement received via email. Requires directors verification. Action needed.",
-      "questionsForHuman": [
-        "Can you review the Companies House email and provide the required verification?"
-      ],
-      "createdAt": "2026-01-28T10:00:00Z",
-      "updatedAt": "2026-01-28T19:59:24.078Z"
-    },
-    {
-      "id": "google-calendar-export",
-      "name": "Google Calendar Export Action",
-      "description": "Calendar action item with deadline.",
-      "status": "queued",
-      "category": "personal",
-      "order": 2,
-      "summary": "Action needed by Apr 27, 2026. Details to be confirmed.",
-      "dueDate": "2026-04-27",
-      "createdAt": "2026-01-28T10:00:00Z",
-      "updatedAt": "2026-01-28T10:00:00Z"
-    },
-    {
-      "id": "peru-trip",
-      "name": "Peru Trip Preparation",
-      "description": "Feb 9 → mid-March. 6 weeks family time with minimal work.",
-      "status": "queued",
-      "category": "personal",
-      "order": 3,
-      "summary": "Ensure all critical work (Slack app launch) completed before departure. Plan minimal work mode for Eric during trip.",
-      "dueDate": "2026-02-09",
-      "nextSteps": [
-        "Ensure Slack app launched before Feb 9",
-        "Define \"minimal work\" expectations during trip",
-        "Set up monitoring for critical alerts only"
-      ],
-      "createdAt": "2026-01-28T10:00:00Z",
-      "updatedAt": "2026-01-28T10:00:00Z"
-    },
-    {
       "id": "project-board",
       "name": "Project Board (This Tool)",
       "description": "Simple project management tool for AI-Human collaboration. Drag-and-drop priorities.",
@@ -143,7 +79,71 @@
       "summary": "Completed 2026-01-28. Scrapes Reddit, GitHub, HN, X/Twitter. Includes trend tracking for topics appearing 4+ days. Runs daily at 5:45 AM UTC.",
       "createdAt": "2026-01-28T10:00:00Z",
       "updatedAt": "2026-01-28T20:09:06.640Z"
+    },
+    {
+      "id": "companies-house",
+      "name": "Companies House Confirmation Statement",
+      "description": "Directors verification needed. Review and complete confirmation statement.",
+      "status": "blocked",
+      "category": "personal",
+      "order": 0,
+      "blockedReason": "Waiting for Jordon to review email and provide verification details.",
+      "summary": "Confirmation statement received via email. Requires directors verification. Action needed.",
+      "questionsForHuman": [
+        "Can you review the Companies House email and provide the required verification?"
+      ],
+      "createdAt": "2026-01-28T10:00:00Z",
+      "updatedAt": "2026-01-29T07:06:23.459Z"
+    },
+    {
+      "id": "pakistan-gift",
+      "name": "Pakistan Gift Research",
+      "description": "Find meaningful gift for friend in Pakistan. £60 budget. Toddler-age appropriate.",
+      "status": "active",
+      "category": "personal",
+      "order": 1,
+      "summary": "Two angles to explore: (1) Super English - play tea set, British brand, distinctly UK. (2) Super Pakistani - traditional craft, artisan piece. Both thoughtful + humorous.",
+      "questionsForHuman": [
+        "Any specific interests of your friend?",
+        "Preference between the two angles (English vs Pakistani)?"
+      ],
+      "nextSteps": [
+        "Research gift options during downtime (lunch, early AM, weekends)",
+        "Find items that ship to Pakistan",
+        "Present top 3-5 options"
+      ],
+      "createdAt": "2026-01-28T10:00:00Z",
+      "updatedAt": "2026-01-29T07:06:23.459Z"
+    },
+    {
+      "id": "google-calendar-export",
+      "name": "Google Calendar Export Action",
+      "description": "Calendar action item with deadline.",
+      "status": "queued",
+      "category": "personal",
+      "order": 2,
+      "summary": "Action needed by Apr 27, 2026. Details to be confirmed.",
+      "dueDate": "2026-04-27",
+      "createdAt": "2026-01-28T10:00:00Z",
+      "updatedAt": "2026-01-29T07:06:23.459Z"
+    },
+    {
+      "id": "peru-trip",
+      "name": "Peru Trip Preparation",
+      "description": "Feb 9 → mid-March. 6 weeks family time with minimal work.",
+      "status": "queued",
+      "category": "personal",
+      "order": 3,
+      "summary": "Ensure all critical work (Slack app launch) completed before departure. Plan minimal work mode for Eric during trip.",
+      "dueDate": "2026-02-09",
+      "nextSteps": [
+        "Ensure Slack app launched before Feb 9",
+        "Define \"minimal work\" expectations during trip",
+        "Set up monitoring for critical alerts only"
+      ],
+      "createdAt": "2026-01-28T10:00:00Z",
+      "updatedAt": "2026-01-29T07:06:23.459Z"
     }
   ],
-  "updatedAt": "2026-01-29T07:06:17.798Z"
+  "updatedAt": "2026-01-29T07:06:23.760Z"
 }
