@@ -3,6 +3,7 @@
 import { useSortable } from '@dnd-kit/sortable';
 import { CSS } from '@dnd-kit/utilities';
 import { Project, STATUS_CONFIG } from '@/types/project';
+import { getRelativeTime, getActivityEmoji } from '@/utils/time';
 
 interface ProjectCardProps {
   project: Project;
@@ -89,6 +90,13 @@ export function ProjectCard({ project, onClick }: ProjectCardProps) {
           {project.prdUrl && (
             <span className="text-xs text-purple-600 bg-purple-50 px-2 py-0.5 rounded">📋 PRD</span>
           )}
+        </div>
+      )}
+      
+      {/* Activity indicator */}
+      {project.lastActivity && project.lastActivityAt && (
+        <div className="mt-2 text-xs text-gray-500 truncate">
+          {getActivityEmoji(project.activityLog?.[0]?.action || 'note')} {getRelativeTime(project.lastActivityAt)}: {project.lastActivity}
         </div>
       )}
     </div>

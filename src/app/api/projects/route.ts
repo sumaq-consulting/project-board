@@ -1,4 +1,5 @@
 import { NextResponse } from 'next/server';
+import { Project, STATUS_CONFIG, ActivityEntry } from '@/types/project';
 
 const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
 const REPO_OWNER = 'sumaq-consulting';
@@ -101,13 +102,46 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: 'Invalid data' }, { status: 400 });
     }
 
-    // Get current file to get SHA
-    const { sha } = await getFileFromGitHub();
+    // Get current file to get SHA and compare for status changes
+    const { content: currentContent, sha } = await getFileFromGitHub();
+    const currentProjects = currentContent.projects || [];
+    const now = new Date().toISOString();
+
+    // Check for status changes and add activity entries
+    const updatedProjects = projects.map((newProject: Project) => {
+      const oldProject = currentProjects.find((p: Project) => p.id === newProject.id);
+      
+      // If status changed, add activity entry
+      if (oldProject && oldProject.status !== newProject.status) {
+        const oldLabel = STATUS_CONFIG[oldProject.status]?.label || oldProject.status;
+        const newLabel = STATUS_CONFIG[newProject.status]?.label || newProject.status;
+        
+        const entry: ActivityEntry = {
+          timestamp: now,
+          action: 'status_change',
+          description: `Status changed: ${oldLabel} → ${newLabel}`,
+          source: 'board',
+        };
+
+        newProject.activityLog = newProject.activityLog || [];
+        newProject.activityLog.unshift(entry);
+        
+        // Prune to last 10
+        if (newProject.activityLog.length > 10) {
+          newProject.activityLog = newProject.activityLog.slice(0, 10);
+        }
+
+        newProject.lastActivity = entry.description;
+        newProject.lastActivityAt = now;
+      }
+
+      return newProject;
+    });
 
     // Save updated content
     const content = {
-      projects,
-      updatedAt: new Date().toISOString(),
+      projects: updatedProjects,
+      updatedAt: now,
     };
     
     await saveFileToGitHub(content, sha);

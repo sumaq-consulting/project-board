@@ -1,6 +1,7 @@
 'use client';
 
 import { Project, STATUS_CONFIG, ProjectStatus } from '@/types/project';
+import { getRelativeTime, getActivityEmoji } from '@/utils/time';
 
 interface ProjectModalProps {
   project: Project | null;
@@ -125,6 +126,22 @@ export function ProjectModal({ project, onClose, onStatusChange }: ProjectModalP
             <div className="pt-4 border-t border-gray-100">
               <h3 className="font-semibold text-gray-700 mb-1">📝 Notes</h3>
               <p className="text-gray-600 text-sm whitespace-pre-wrap">{project.notes}</p>
+            </div>
+          )}
+
+          {/* Activity Log */}
+          {project.activityLog && project.activityLog.length > 0 && (
+            <div className="pt-4 border-t border-gray-100">
+              <h3 className="font-semibold text-gray-700 mb-2">📋 Recent Activity</h3>
+              <ul className="space-y-2">
+                {project.activityLog.slice(0, 5).map((entry, i) => (
+                  <li key={i} className="text-sm text-gray-600 flex items-start gap-2">
+                    <span>{getActivityEmoji(entry.action)}</span>
+                    <span className="text-gray-400 min-w-[70px]">{getRelativeTime(entry.timestamp)}</span>
+                    <span>{entry.description}</span>
+                  </li>
+                ))}
+              </ul>
             </div>
           )}
 
