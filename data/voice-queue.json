@@ -6,7 +6,8 @@
       "transcript": "This is a test text message from the message box. Please confirm receipt.",
       "projectId": "slack-feedback-app",
       "projectName": "Slack Feedback App (Simpl Markup)",
-      "processed": false
+      "processed": true,
+      "processedAt": "2026-01-29T09:46:03.475Z"
     },
     {
       "id": "vm-20260129-094159",
