@@ -131,7 +131,17 @@
         "Can you review the Companies House email and provide the required verification?"
       ],
       "createdAt": "2026-01-28T10:00:00Z",
-      "updatedAt": "2026-01-29T07:06:23.459Z"
+      "updatedAt": "2026-01-29T09:46:06.523Z",
+      "lastActivity": "Received voice note re: email forwarding options",
+      "lastActivityAt": "2026-01-29T09:46:06.523Z",
+      "activityLog": [
+        {
+          "timestamp": "2026-01-29T09:46:06.523Z",
+          "action": "note",
+          "description": "Received voice note re: email forwarding options",
+          "source": "api"
+        }
+      ]
     },
     {
       "id": "pakistan-gift",
