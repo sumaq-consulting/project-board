@@ -1,6 +1,14 @@
 {
   "messages": [
     {
+      "id": "vm-20260129-094530",
+      "timestamp": "2026-01-29T09:45:30.349Z",
+      "transcript": "This is a test text message from the message box. Please confirm receipt.",
+      "projectId": "slack-feedback-app",
+      "projectName": "Slack Feedback App (Simpl Markup)",
+      "processed": false
+    },
+    {
       "id": "vm-20260129-094159",
       "timestamp": "2026-01-29T09:41:59.916Z",
       "transcript": "MBC 뉴스 이덕영입니다.",
