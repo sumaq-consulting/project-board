@@ -109,12 +109,12 @@ export async function POST(request: Request) {
 
     // Check for status changes and add activity entries
     const updatedProjects = projects.map((newProject: Project) => {
-      const oldProject = currentProjects.find((p: Project) => p.id === newProject.id);
+      const oldProject = currentProjects.find((p: Project) => p.id === newProject.id) as Project | undefined;
       
       // If status changed, add activity entry
       if (oldProject && oldProject.status !== newProject.status) {
-        const oldLabel = STATUS_CONFIG[oldProject.status]?.label || oldProject.status;
-        const newLabel = STATUS_CONFIG[newProject.status]?.label || newProject.status;
+        const oldLabel = STATUS_CONFIG[oldProject.status as keyof typeof STATUS_CONFIG]?.label || oldProject.status;
+        const newLabel = STATUS_CONFIG[newProject.status as keyof typeof STATUS_CONFIG]?.label || newProject.status;
         
         const entry: ActivityEntry = {
           timestamp: now,
