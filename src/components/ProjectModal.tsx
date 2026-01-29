@@ -2,6 +2,14 @@
 
 import { Project, STATUS_CONFIG, ProjectStatus } from '@/types/project';
 import { getRelativeTime, getActivityEmoji } from '@/utils/time';
+import { VoiceRecorder } from './VoiceRecorder';
+
+const PIN_STORAGE_KEY = 'project-board-pin';
+
+function getPin(): string {
+  if (typeof window === 'undefined') return '';
+  return localStorage.getItem(PIN_STORAGE_KEY) || '';
+}
 
 interface ProjectModalProps {
   project: Project | null;
@@ -152,6 +160,16 @@ export function ProjectModal({ project, onClose, onStatusChange }: ProjectModalP
             )}
             <p>Created: {new Date(project.createdAt).toLocaleDateString()}</p>
             <p>Updated: {new Date(project.updatedAt).toLocaleDateString()}</p>
+          </div>
+
+          {/* Voice Note to Eric */}
+          <div className="pt-4 border-t border-gray-100">
+            <h3 className="font-semibold text-gray-700 mb-2">🎤 Message Eric</h3>
+            <VoiceRecorder 
+              pin={getPin()} 
+              projectId={project.id}
+              projectName={project.name}
+            />
           </div>
 
           {/* Status Change Buttons */}

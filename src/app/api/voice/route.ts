@@ -11,6 +11,8 @@ interface VoiceMessage {
   id: string;
   timestamp: string;
   transcript: string;
+  projectId?: string;
+  projectName?: string;
   processed: boolean;
   processedAt?: string;
 }
@@ -133,6 +135,8 @@ export async function POST(request: Request) {
   try {
     const formData = await request.formData();
     const audioFile = formData.get('audio') as Blob;
+    const projectId = formData.get('projectId') as string | null;
+    const projectName = formData.get('projectName') as string | null;
     
     if (!audioFile) {
       return NextResponse.json({ error: 'No audio file provided' }, { status: 400 });
@@ -156,6 +160,8 @@ export async function POST(request: Request) {
       id: messageId,
       timestamp: now.toISOString(),
       transcript,
+      ...(projectId && { projectId }),
+      ...(projectName && { projectName }),
       processed: false,
     };
 
