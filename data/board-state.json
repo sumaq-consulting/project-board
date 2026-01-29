@@ -4,7 +4,7 @@
       "id": "project-board",
       "name": "Project Board (This Tool)",
       "description": "Simple project management tool for AI-Human collaboration. Drag-and-drop priorities.",
-      "status": "active",
+      "status": "queued",
       "category": "work",
       "order": 0,
       "summary": "Building now. Will provide shared visibility on projects, priorities, and status.",
@@ -14,12 +14,18 @@
         "Iterate based on feedback"
       ],
       "createdAt": "2026-01-28T19:00:00Z",
-      "updatedAt": "2026-01-29T08:50:00Z",
+      "updatedAt": "2026-01-29T08:57:28.466Z",
       "summaryUrl": "https://docs.google.com/document/d/1iLFw6Jg2YZSrZh60I1Y0xBmHoqLalnGu1__Y-zfv7Qg/edit",
       "prdUrl": "https://docs.google.com/document/d/1XRkkXY7R8ClrS7htevxXFcPfhCFJTWY9qWJFUzbC4-4/edit",
-      "lastActivity": "Added activity tracking feature",
-      "lastActivityAt": "2026-01-29T08:50:00Z",
+      "lastActivity": "Status changed: Active → Queued",
+      "lastActivityAt": "2026-01-29T08:57:28.600Z",
       "activityLog": [
+        {
+          "timestamp": "2026-01-29T08:57:28.600Z",
+          "action": "status_change",
+          "description": "Status changed: Active → Queued",
+          "source": "board"
+        },
         {
           "timestamp": "2026-01-29T08:50:00Z",
           "action": "work_completed",
@@ -167,5 +173,5 @@
       "updatedAt": "2026-01-29T07:06:23.459Z"
     }
   ],
-  "updatedAt": "2026-01-29T07:06:23.760Z"
+  "updatedAt": "2026-01-29T08:57:28.600Z"
 }
