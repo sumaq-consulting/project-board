@@ -81,9 +81,19 @@
         "Find beta testers / launch communities"
       ],
       "createdAt": "2026-01-28T10:00:00Z",
-      "updatedAt": "2026-01-29T07:06:17.597Z",
+      "updatedAt": "2026-01-29T09:05:40.419Z",
       "summaryUrl": "https://docs.google.com/document/d/1nKgm-wsqwXJxGwcw9rDx6jDUpP6JTrjlf_4KIc4hFT0/edit",
-      "prdUrl": "https://docs.google.com/document/d/1zzl9OjEfTeV-34kEXfnA396cKKRuUgkFwwW0IlcvCIo/edit"
+      "prdUrl": "https://docs.google.com/document/d/1zzl9OjEfTeV-34kEXfnA396cKKRuUgkFwwW0IlcvCIo/edit",
+      "lastActivity": "Received voice note: Prioritize Stripe integration",
+      "lastActivityAt": "2026-01-29T09:05:40.419Z",
+      "activityLog": [
+        {
+          "timestamp": "2026-01-29T09:05:40.419Z",
+          "action": "note",
+          "description": "Received voice note: Prioritize Stripe integration",
+          "source": "api"
+        }
+      ]
     },
     {
       "id": "personal-brand",
