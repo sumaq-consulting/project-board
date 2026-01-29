@@ -20,6 +20,7 @@ import { Project, ProjectCategory, ProjectStatus } from '@/types/project';
 import { initialProjects } from '@/data/projects';
 import { ProjectCard } from './ProjectCard';
 import { ProjectModal } from './ProjectModal';
+import { VoiceRecorder } from './VoiceRecorder';
 
 const LOCAL_STORAGE_KEY = 'project-board-data';
 const PIN_STORAGE_KEY = 'project-board-pin';
@@ -269,16 +270,19 @@ export function ProjectBoard() {
             <span className="text-gray-500">⚪ {stats.queued} Queued</span>
             <span className="text-blue-600">✅ {stats.done} Done</span>
           </div>
-          <button
-            onClick={toggleHideDone}
-            className={`text-sm px-3 py-1 rounded-lg transition-colors ${
-              hideDone
-                ? 'bg-blue-100 text-blue-700 hover:bg-blue-200'
-                : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
-            }`}
-          >
-            {hideDone ? '👁️ Show completed' : '🙈 Hide completed'}
-          </button>
+          <div className="flex items-center gap-3">
+            <VoiceRecorder pin={getPin() || ''} />
+            <button
+              onClick={toggleHideDone}
+              className={`text-sm px-3 py-1 rounded-lg transition-colors ${
+                hideDone
+                  ? 'bg-blue-100 text-blue-700 hover:bg-blue-200'
+                  : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+              }`}
+            >
+              {hideDone ? '👁️ Show completed' : '🙈 Hide completed'}
+            </button>
+          </div>
         </div>
       </div>
 
