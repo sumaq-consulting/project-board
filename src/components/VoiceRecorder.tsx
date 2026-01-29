@@ -18,7 +18,7 @@ export function VoiceRecorder({ pin }: VoiceRecorderProps) {
   const timerRef = useRef<NodeJS.Timeout | null>(null);
   const streamRef = useRef<MediaStream | null>(null);
 
-  const MAX_DURATION = 60; // seconds
+  const MAX_DURATION = 600; // 10 minutes
 
   useEffect(() => {
     // Cleanup on unmount
