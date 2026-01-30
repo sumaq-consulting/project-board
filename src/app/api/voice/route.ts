@@ -5,6 +5,7 @@ const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
 const REPO_OWNER = 'sumaq-consulting';
 const REPO_NAME = 'project-board';
 const QUEUE_FILE_PATH = 'data/voice-queue.json';
+const FAILED_LOG_PATH = 'data/failed-transcriptions.json';
 const BRANCH = 'master';
 
 interface VoiceMessage {
@@ -19,6 +20,19 @@ interface VoiceMessage {
 
 interface VoiceQueue {
   messages: VoiceMessage[];
+}
+
+interface FailedTranscription {
+  id: string;
+  timestamp: string;
+  error: string;
+  audioSizeBytes: number;
+  projectId?: string;
+  projectName?: string;
+}
+
+interface FailedLog {
+  failures: FailedTranscription[];
 }
 
 // Simple PIN-based auth check
@@ -89,6 +103,77 @@ async function saveQueueToGitHub(content: VoiceQueue, sha: string | null, messag
   return response.json();
 }
 
+async function getFailedLogFromGitHub(): Promise<{ content: FailedLog; sha: string | null }> {
+  const url = `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/${FAILED_LOG_PATH}?ref=${BRANCH}`;
+  
+  const response = await fetch(url, {
+    headers: {
+      'Authorization': `Bearer ${GITHUB_TOKEN}`,
+      'Accept': 'application/vnd.github.v3+json',
+      'X-GitHub-Api-Version': '2022-11-28',
+    },
+    cache: 'no-store',
+  });
+
+  if (!response.ok) {
+    if (response.status === 404) {
+      return { content: { failures: [] }, sha: null };
+    }
+    throw new Error(`GitHub API error: ${response.status}`);
+  }
+
+  const data = await response.json();
+  const content = JSON.parse(Buffer.from(data.content, 'base64').toString('utf-8'));
+  return { content, sha: data.sha };
+}
+
+async function logFailedTranscription(failure: FailedTranscription) {
+  try {
+    console.log('Logging failed transcription:', failure.id, failure.error.slice(0, 50));
+    
+    const { content: log, sha } = await getFailedLogFromGitHub();
+    log.failures.unshift(failure);
+    
+    // Keep last 100 failures
+    if (log.failures.length > 100) {
+      log.failures = log.failures.slice(0, 100);
+    }
+
+    const url = `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/${FAILED_LOG_PATH}`;
+    
+    const body: Record<string, unknown> = {
+      message: `Failed transcription: ${failure.error.slice(0, 50)}`,
+      content: Buffer.from(JSON.stringify(log, null, 2)).toString('base64'),
+      branch: BRANCH,
+    };
+    
+    if (sha) {
+      body.sha = sha;
+    }
+
+    const response = await fetch(url, {
+      method: 'PUT',
+      headers: {
+        'Authorization': `Bearer ${GITHUB_TOKEN}`,
+        'Accept': 'application/vnd.github.v3+json',
+        'X-GitHub-Api-Version': '2022-11-28',
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(body),
+    });
+
+    if (!response.ok) {
+      const errorText = await response.text();
+      console.error('GitHub API error when logging failure:', response.status, errorText);
+    } else {
+      console.log('Successfully logged failed transcription to GitHub');
+    }
+  } catch (err) {
+    console.error('Failed to log transcription failure:', err);
+    // Don't throw - logging failures shouldn't break the main flow
+  }
+}
+
 async function transcribeAudio(audioBlob: Blob): Promise<string> {
   const formData = new FormData();
   formData.append('file', audioBlob, 'audio.webm');
@@ -132,12 +217,16 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
   }
 
+  const timing: Record<string, number> = {};
+  const startTime = Date.now();
+
   try {
     const contentType = request.headers.get('content-type') || '';
     
     let transcript: string;
     let projectId: string | null = null;
     let projectName: string | null = null;
+    let audioSizeBytes = 0;
     
     // Handle JSON (text message) or FormData (voice note)
     if (contentType.includes('application/json')) {
@@ -151,7 +240,10 @@ export async function POST(request: Request) {
       }
     } else {
       // FormData with audio
+      const parseStart = Date.now();
       const formData = await request.formData();
+      timing.parseFormDataMs = Date.now() - parseStart;
+      
       const audioFile = formData.get('audio') as Blob;
       projectId = formData.get('projectId') as string | null;
       projectName = formData.get('projectName') as string | null;
@@ -160,10 +252,50 @@ export async function POST(request: Request) {
         return NextResponse.json({ error: 'No audio file provided' }, { status: 400 });
       }
 
+      audioSizeBytes = audioFile.size;
+      
       // Transcribe audio
-      transcript = await transcribeAudio(audioFile);
+      const transcribeStart = Date.now();
+      try {
+        transcript = await transcribeAudio(audioFile);
+      } catch (transcriptionError) {
+        // Log the failed transcription
+        const errorMessage = transcriptionError instanceof Error 
+          ? transcriptionError.message 
+          : String(transcriptionError);
+        
+        const now = new Date();
+        const dateStr = now.toISOString().slice(0, 10).replace(/-/g, '');
+        const timeStr = now.toISOString().slice(11, 19).replace(/:/g, '');
+        
+        await logFailedTranscription({
+          id: `fail-${dateStr}-${timeStr}`,
+          timestamp: now.toISOString(),
+          error: errorMessage,
+          audioSizeBytes,
+          ...(projectId && { projectId }),
+          ...(projectName && { projectName }),
+        });
+        
+        throw transcriptionError;
+      }
+      timing.transcribeMs = Date.now() - transcribeStart;
       
       if (!transcript || transcript.trim().length === 0) {
+        // Log empty transcription as failure
+        const now = new Date();
+        const dateStr = now.toISOString().slice(0, 10).replace(/-/g, '');
+        const timeStr = now.toISOString().slice(11, 19).replace(/:/g, '');
+        
+        await logFailedTranscription({
+          id: `fail-${dateStr}-${timeStr}`,
+          timestamp: now.toISOString(),
+          error: 'No speech detected - empty transcript',
+          audioSizeBytes,
+          ...(projectId && { projectId }),
+          ...(projectName && { projectName }),
+        });
+        
         return NextResponse.json({ error: 'No speech detected' }, { status: 400 });
       }
     }
@@ -185,6 +317,7 @@ export async function POST(request: Request) {
     };
 
     // Get current queue and add message
+    const githubStart = Date.now();
     const { content: queue, sha } = await getQueueFromGitHub();
     queue.messages.unshift(message);
 
@@ -195,15 +328,24 @@ export async function POST(request: Request) {
 
     // Save queue
     await saveQueueToGitHub(queue, sha, `Voice note: ${transcript.slice(0, 30)}...`);
+    timing.githubMs = Date.now() - githubStart;
+    timing.totalMs = Date.now() - startTime;
 
     return NextResponse.json({ 
       success: true, 
       messageId,
       transcript,
+      timing,
+      audioSizeBytes,
     });
     
   } catch (error) {
     console.error('Error processing voice note:', error);
-    return NextResponse.json({ error: 'Failed to process voice note' }, { status: 500 });
+    timing.totalMs = Date.now() - startTime;
+    
+    return NextResponse.json({ 
+      error: 'Failed to process voice note',
+      timing,
+    }, { status: 500 });
   }
 }
