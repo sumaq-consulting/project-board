@@ -202,10 +202,16 @@
         "Present options for Jordon to choose"
       ],
       "createdAt": "2026-01-28T10:00:00Z",
-      "updatedAt": "2026-01-30T17:59:56.864Z",
-      "lastActivity": "Started gift research: Found Fortnum & Mason hampers from £50 with international export. Also found delivery services (expressgiftservice.com, primegiftservice.com). Next: research British toddler items (Paddington, Peter Rabbit).",
-      "lastActivityAt": "2026-01-30T17:59:56.864Z",
+      "updatedAt": "2026-01-30T18:59:38.644Z",
+      "lastActivity": "Continued research: Found Paddington Store (store.paddington.com), Trotters UK Paddington Gift Set (£38), Peter Rabbit from Beatrix Potter Shop (worldwide shipping). Penguin has Book+Toy gift set. Compiling final 3-5 options for Jordon.",
+      "lastActivityAt": "2026-01-30T18:59:38.644Z",
       "activityLog": [
+        {
+          "timestamp": "2026-01-30T18:59:38.644Z",
+          "action": "note",
+          "description": "Continued research: Found Paddington Store (store.paddington.com), Trotters UK Paddington Gift Set (£38), Peter Rabbit from Beatrix Potter Shop (worldwide shipping). Penguin has Book+Toy gift set. Compiling final 3-5 options for Jordon.",
+          "source": "api"
+        },
         {
           "timestamp": "2026-01-30T17:59:56.864Z",
           "action": "note",
