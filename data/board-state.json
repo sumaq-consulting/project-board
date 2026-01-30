@@ -131,7 +131,7 @@
         "Can you review the Companies House email and provide the required verification?"
       ],
       "createdAt": "2026-01-28T10:00:00Z",
-      "updatedAt": "2026-01-29T09:46:06.523Z",
+      "updatedAt": "2026-01-30T11:25:25.831Z",
       "lastActivity": "Received voice note re: email forwarding options",
       "lastActivityAt": "2026-01-29T09:46:06.523Z",
       "activityLog": [
@@ -144,12 +144,29 @@
       ]
     },
     {
+      "id": "peru-trip",
+      "name": "Peru Trip Preparation",
+      "description": "Feb 9 → mid-March. 6 weeks family time with minimal work.",
+      "status": "queued",
+      "category": "personal",
+      "order": 1,
+      "summary": "Ensure all critical work (Slack app launch) completed before departure. Plan minimal work mode for Eric during trip.",
+      "dueDate": "2026-02-09",
+      "nextSteps": [
+        "Ensure Slack app launched before Feb 9",
+        "Define \"minimal work\" expectations during trip",
+        "Set up monitoring for critical alerts only"
+      ],
+      "createdAt": "2026-01-28T10:00:00Z",
+      "updatedAt": "2026-01-30T11:25:25.831Z"
+    },
+    {
       "id": "pakistan-gift",
       "name": "Pakistan Gift Research",
       "description": "Find meaningful gift for friend in Pakistan. £60 budget. Toddler-age appropriate.",
       "status": "active",
       "category": "personal",
-      "order": 1,
+      "order": 2,
       "summary": "Two angles to explore: (1) Super English - play tea set, British brand, distinctly UK. (2) Super Pakistani - traditional craft, artisan piece. Both thoughtful + humorous.",
       "questionsForHuman": [
         "Any specific interests of your friend?",
@@ -161,7 +178,7 @@
         "Present top 3-5 options"
       ],
       "createdAt": "2026-01-28T10:00:00Z",
-      "updatedAt": "2026-01-29T07:06:23.459Z"
+      "updatedAt": "2026-01-30T11:25:25.831Z"
     },
     {
       "id": "google-calendar-export",
@@ -169,29 +186,12 @@
       "description": "Calendar action item with deadline.",
       "status": "queued",
       "category": "personal",
-      "order": 2,
+      "order": 3,
       "summary": "Action needed by Apr 27, 2026. Details to be confirmed.",
       "dueDate": "2026-04-27",
       "createdAt": "2026-01-28T10:00:00Z",
-      "updatedAt": "2026-01-29T07:06:23.459Z"
-    },
-    {
-      "id": "peru-trip",
-      "name": "Peru Trip Preparation",
-      "description": "Feb 9 → mid-March. 6 weeks family time with minimal work.",
-      "status": "queued",
-      "category": "personal",
-      "order": 3,
-      "summary": "Ensure all critical work (Slack app launch) completed before departure. Plan minimal work mode for Eric during trip.",
-      "dueDate": "2026-02-09",
-      "nextSteps": [
-        "Ensure Slack app launched before Feb 9",
-        "Define \"minimal work\" expectations during trip",
-        "Set up monitoring for critical alerts only"
-      ],
-      "createdAt": "2026-01-28T10:00:00Z",
-      "updatedAt": "2026-01-29T07:06:23.459Z"
+      "updatedAt": "2026-01-30T11:25:25.831Z"
     }
   ],
-  "updatedAt": "2026-01-29T08:57:39.606Z"
+  "updatedAt": "2026-01-30T11:25:26.104Z"
 }
