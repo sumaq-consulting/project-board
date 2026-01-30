@@ -6,7 +6,8 @@
       "transcript": "you",
       "projectId": "project-board",
       "projectName": "Project Board (This Tool)",
-      "processed": false
+      "processed": true,
+      "processedAt": "2026-01-30T19:16:53.623Z"
     },
     {
       "id": "vm-20260130-191430",
