@@ -14,7 +14,8 @@
       "transcript": "Test message from Eric debugging",
       "projectId": "project-board",
       "projectName": "Project Board",
-      "processed": false
+      "processed": true,
+      "processedAt": "2026-01-30T19:16:52.870Z"
     },
     {
       "id": "vm-20260130-190920",
