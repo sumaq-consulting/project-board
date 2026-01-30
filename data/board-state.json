@@ -17,15 +17,9 @@
       "updatedAt": "2026-01-30T11:30:57.518Z",
       "summaryUrl": "https://docs.google.com/document/d/1iLFw6Jg2YZSrZh60I1Y0xBmHoqLalnGu1__Y-zfv7Qg/edit",
       "prdUrl": "https://docs.google.com/document/d/1XRkkXY7R8ClrS7htevxXFcPfhCFJTWY9qWJFUzbC4-4/edit",
-      "lastActivity": "Status changed: Active → Done",
-      "lastActivityAt": "2026-01-30T11:30:57.720Z",
+      "lastActivity": "Status changed: Queued → Active",
+      "lastActivityAt": "2026-01-29T08:57:39.606Z",
       "activityLog": [
-        {
-          "timestamp": "2026-01-30T11:30:57.720Z",
-          "action": "status_change",
-          "description": "Status changed: Active → Done",
-          "source": "board"
-        },
         {
           "timestamp": "2026-01-29T08:57:39.606Z",
           "action": "status_change",
@@ -56,7 +50,7 @@
       "id": "clawdbot-maintenance",
       "name": "Clawdbot Maintenance & Security",
       "description": "Ongoing maintenance, security monitoring, and improvements for Clawdbot setup.",
-      "status": "queued",
+      "status": "done",
       "category": "work",
       "order": 1,
       "summary": "Daily heartbeat + intel scraper covers security monitoring. Server healthy (132 days uptime). No immediate action needed.",
@@ -66,7 +60,17 @@
         "Token rotation (quarterly reminder)"
       ],
       "createdAt": "2026-01-28T10:00:00Z",
-      "updatedAt": "2026-01-29T07:06:17.597Z"
+      "updatedAt": "2026-01-30T11:31:09.205Z",
+      "activityLog": [
+        {
+          "timestamp": "2026-01-30T11:31:09.514Z",
+          "action": "status_change",
+          "description": "Status changed: Queued → Done",
+          "source": "board"
+        }
+      ],
+      "lastActivity": "Status changed: Queued → Done",
+      "lastActivityAt": "2026-01-30T11:31:09.514Z"
     },
     {
       "id": "slack-feedback-app",
@@ -209,5 +213,5 @@
       "updatedAt": "2026-01-30T11:25:25.831Z"
     }
   ],
-  "updatedAt": "2026-01-30T11:30:57.720Z"
+  "updatedAt": "2026-01-30T11:31:09.514Z"
 }
