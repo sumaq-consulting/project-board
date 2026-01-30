@@ -1,1 +1,12 @@
-{"failures":[]}
+{
+  "failures": [
+    {
+      "id": "fail-20260130-192623",
+      "timestamp": "2026-01-30T19:26:23.727Z",
+      "error": "Whisper API error: 400 - {\"error\":{\"message\":\"Invalid file format. Supported formats: ['flac', 'm4a', 'mp3', 'mp4', 'mpeg', 'mpga', 'oga', 'ogg', 'wav', 'webm']\",\"type\":\"invalid_request_error\",\"param\":null,\"code\":null},\"usage\":{\"type\":\"duration\",\"seconds\":0}}",
+      "audioSizeBytes": 7,
+      "projectId": "test-123",
+      "projectName": "Test Failed Transcription"
+    }
+  ]
+}
