@@ -14,7 +14,8 @@
       "transcript": "I answered questions. You should have updated the project status",
       "projectId": "micro-saas-tracer-bullets",
       "projectName": "Micro-SaaS Tracer Bullets",
-      "processed": false
+      "processed": true,
+      "processedAt": "2026-01-30T21:59:30.254Z"
     },
     {
       "id": "vm-20260130-193518",
