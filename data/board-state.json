@@ -202,10 +202,16 @@
         "Present options for Jordon to choose"
       ],
       "createdAt": "2026-01-28T10:00:00Z",
-      "updatedAt": "2026-01-30T18:59:38.644Z",
-      "lastActivity": "Continued research: Found Paddington Store (store.paddington.com), Trotters UK Paddington Gift Set (£38), Peter Rabbit from Beatrix Potter Shop (worldwide shipping). Penguin has Book+Toy gift set. Compiling final 3-5 options for Jordon.",
-      "lastActivityAt": "2026-01-30T18:59:38.644Z",
+      "updatedAt": "2026-01-30T19:17:01.923Z",
+      "lastActivity": "Researched expressgiftservice.com: Lindt Classic Mens Hamper $41 (~£33). Site offers same-day delivery across Pakistan, handles customs. Top pick for simplicity within budget.",
+      "lastActivityAt": "2026-01-30T19:17:01.923Z",
       "activityLog": [
+        {
+          "timestamp": "2026-01-30T19:17:01.923Z",
+          "action": "note",
+          "description": "Researched expressgiftservice.com: Lindt Classic Mens Hamper $41 (~£33). Site offers same-day delivery across Pakistan, handles customs. Top pick for simplicity within budget.",
+          "source": "api"
+        },
         {
           "timestamp": "2026-01-30T18:59:38.644Z",
           "action": "note",
