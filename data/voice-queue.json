@@ -22,7 +22,8 @@
       "transcript": "Okay, okay, cool. What would be your recommendation from this site then? You've recommended a site, which is cool, but what would be your recommendation on the site?",
       "projectId": "pakistan-gift",
       "projectName": "Pakistan Gift Research",
-      "processed": false
+      "processed": true,
+      "processedAt": "2026-01-30T19:16:51.968Z"
     },
     {
       "id": "vm-20260130-113238",
