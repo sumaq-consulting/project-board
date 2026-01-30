@@ -1,6 +1,14 @@
 {
   "messages": [
     {
+      "id": "vm-20260130-191439",
+      "timestamp": "2026-01-30T19:14:39.055Z",
+      "transcript": "you",
+      "projectId": "project-board",
+      "projectName": "Project Board (This Tool)",
+      "processed": false
+    },
+    {
       "id": "vm-20260130-191430",
       "timestamp": "2026-01-30T19:14:30.389Z",
       "transcript": "Test message from Eric debugging",
