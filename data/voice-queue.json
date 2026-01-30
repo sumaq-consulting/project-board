@@ -15,7 +15,8 @@
       "transcript": "Delete this",
       "projectId": "google-calendar-export",
       "projectName": "Google Calendar Export Action",
-      "processed": false
+      "processed": true,
+      "processedAt": "2026-01-30T13:40:25.267Z"
     },
     {
       "id": "vm-20260129-095342",
