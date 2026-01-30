@@ -1,6 +1,14 @@
 {
   "messages": [
     {
+      "id": "vm-20260130-191430",
+      "timestamp": "2026-01-30T19:14:30.389Z",
+      "transcript": "Test message from Eric debugging",
+      "projectId": "project-board",
+      "projectName": "Project Board",
+      "processed": false
+    },
+    {
       "id": "vm-20260130-190920",
       "timestamp": "2026-01-30T19:09:20.665Z",
       "transcript": "Okay, okay, cool. What would be your recommendation from this site then? You've recommended a site, which is cool, but what would be your recommendation on the site?",
