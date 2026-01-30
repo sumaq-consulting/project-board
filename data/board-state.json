@@ -60,17 +60,7 @@
         "Token rotation (quarterly reminder)"
       ],
       "createdAt": "2026-01-28T10:00:00Z",
-      "updatedAt": "2026-01-30T11:31:09.205Z",
-      "activityLog": [
-        {
-          "timestamp": "2026-01-30T11:31:09.514Z",
-          "action": "status_change",
-          "description": "Status changed: Queued → Done",
-          "source": "board"
-        }
-      ],
-      "lastActivity": "Status changed: Queued → Done",
-      "lastActivityAt": "2026-01-30T11:31:09.514Z"
+      "updatedAt": "2026-01-30T11:31:09.205Z"
     },
     {
       "id": "slack-feedback-app",
@@ -109,13 +99,23 @@
       "id": "personal-brand",
       "name": "Personal Brand Building",
       "description": "Build personal brand for future consulting/services. Target: mid-2026.",
-      "status": "queued",
+      "status": "active",
       "category": "work",
       "order": 3,
       "summary": "Deprioritized until Slack app is generating revenue. Research communities, content angles, and positioning when time comes.",
       "dueDate": "2026-06-01",
       "createdAt": "2026-01-28T10:00:00Z",
-      "updatedAt": "2026-01-29T07:06:17.597Z"
+      "updatedAt": "2026-01-30T11:31:14.356Z",
+      "activityLog": [
+        {
+          "timestamp": "2026-01-30T11:31:15.084Z",
+          "action": "status_change",
+          "description": "Status changed: Queued → Active",
+          "source": "board"
+        }
+      ],
+      "lastActivity": "Status changed: Queued → Active",
+      "lastActivityAt": "2026-01-30T11:31:15.084Z"
     },
     {
       "id": "intel-scraper",
@@ -213,5 +213,5 @@
       "updatedAt": "2026-01-30T11:25:25.831Z"
     }
   ],
-  "updatedAt": "2026-01-30T11:31:09.514Z"
+  "updatedAt": "2026-01-30T11:31:15.084Z"
 }
