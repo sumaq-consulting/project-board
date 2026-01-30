@@ -20,6 +20,7 @@ import { Project, ProjectCategory, ProjectStatus } from '@/types/project';
 import { initialProjects } from '@/data/projects';
 import { ProjectCard } from './ProjectCard';
 import { ProjectModal } from './ProjectModal';
+import { ActivityFeed } from './ActivityFeed';
 // VoiceRecorder moved to ProjectModal for per-project voice notes
 
 const LOCAL_STORAGE_KEY = 'project-board-data';
@@ -217,7 +218,7 @@ export function ProjectBoard() {
     <div className="min-h-screen bg-gray-50">
       {/* Header */}
       <header className="bg-white border-b border-gray-200 sticky top-0 z-10">
-        <div className="max-w-4xl mx-auto px-4 py-4">
+        <div className="max-w-6xl mx-auto px-4 py-4">
           <div className="flex items-center justify-between mb-4">
             <div>
               <h1 className="text-2xl font-bold text-gray-900">Project Board</h1>
@@ -261,30 +262,33 @@ export function ProjectBoard() {
         </div>
       </header>
 
-      {/* Stats Bar */}
-      <div className="max-w-4xl mx-auto px-4 py-3">
-        <div className="flex items-center justify-between">
-          <div className="flex gap-4 text-sm">
-            <span className="text-green-600">🟢 {stats.active} Active</span>
-            <span className="text-red-600">🔴 {stats.blocked} Blocked</span>
-            <span className="text-gray-500">⚪ {stats.queued} Queued</span>
-            <span className="text-blue-600">✅ {stats.done} Done</span>
-          </div>
-          <button
-            onClick={toggleHideDone}
-            className={`text-sm px-3 py-1 rounded-lg transition-colors ${
-              hideDone
-                ? 'bg-blue-100 text-blue-700 hover:bg-blue-200'
-                : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
-            }`}
-          >
-            {hideDone ? '👁️ Show completed' : '🙈 Hide completed'}
-          </button>
-        </div>
-      </div>
+      {/* Main Content Area - Two Column Layout */}
+      <div className="max-w-6xl mx-auto px-4 py-3">
+        <div className="flex flex-col lg:flex-row gap-6">
+          {/* Left Column - Projects */}
+          <div className="flex-1 min-w-0">
+            {/* Stats Bar */}
+            <div className="flex items-center justify-between mb-4">
+              <div className="flex gap-4 text-sm">
+                <span className="text-green-600">🟢 {stats.active} Active</span>
+                <span className="text-red-600">🔴 {stats.blocked} Blocked</span>
+                <span className="text-gray-500">⚪ {stats.queued} Queued</span>
+                <span className="text-blue-600">✅ {stats.done} Done</span>
+              </div>
+              <button
+                onClick={toggleHideDone}
+                className={`text-sm px-3 py-1 rounded-lg transition-colors ${
+                  hideDone
+                    ? 'bg-blue-100 text-blue-700 hover:bg-blue-200'
+                    : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+                }`}
+              >
+                {hideDone ? '👁️ Show completed' : '🙈 Hide completed'}
+              </button>
+            </div>
 
-      {/* Project List */}
-      <main className="max-w-4xl mx-auto px-4 pb-8">
+            {/* Project List */}
+            <main className="pb-8">
         {/* Main List (non-done items) */}
         <DndContext
           sensors={sensors}
@@ -340,7 +344,17 @@ export function ProjectBoard() {
             </div>
           </div>
         )}
-      </main>
+            </main>
+          </div>
+
+          {/* Right Column - Activity Feed */}
+          <div className="w-full lg:w-80 flex-shrink-0">
+            <div className="lg:sticky lg:top-24">
+              <ActivityFeed />
+            </div>
+          </div>
+        </div>
+      </div>
 
       {/* Modal */}
       <ProjectModal
