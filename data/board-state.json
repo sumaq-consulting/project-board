@@ -187,30 +187,18 @@
       "status": "active",
       "category": "personal",
       "order": 2,
-      "summary": "Two angles to explore: (1) Super English - play tea set, British brand, distinctly UK. (2) Super Pakistani - traditional craft, artisan piece. Both thoughtful + humorous.",
-      "questionsForHuman": [
-        "Any specific interests of your friend?",
-        "Preference between the two angles (English vs Pakistani)?"
-      ],
+      "summary": "English gift angle preferred. No specific interests for recipient. Research UK items that ship to Pakistan - thoughtful + humorous British items.",
+      "questionsForHuman": [],
       "nextSteps": [
-        "Research gift options during downtime (lunch, early AM, weekends)",
-        "Find items that ship to Pakistan",
-        "Present top 3-5 options"
+        "Find 3-5 UK gift options that ship to Pakistan",
+        "Focus on distinctly British/English items",
+        "Budget: £60",
+        "Present options for Jordon to choose"
       ],
       "createdAt": "2026-01-28T10:00:00Z",
-      "updatedAt": "2026-01-30T11:25:25.831Z"
-    },
-    {
-      "id": "google-calendar-export",
-      "name": "Google Calendar Export Action",
-      "description": "Calendar action item with deadline.",
-      "status": "queued",
-      "category": "personal",
-      "order": 3,
-      "summary": "Action needed by Apr 27, 2026. Details to be confirmed.",
-      "dueDate": "2026-04-27",
-      "createdAt": "2026-01-28T10:00:00Z",
-      "updatedAt": "2026-01-30T11:25:25.831Z"
+      "updatedAt": "2026-01-30T13:40:18.843430Z",
+      "lastActivity": "Questions answered: English angle preferred, no specific interests",
+      "lastActivityAt": "2026-01-30T13:40:18.843430Z"
     },
     {
       "id": "micro-saas-tracer-bullets",
@@ -235,5 +223,5 @@
       "summaryUrl": "https://docs.google.com/spreadsheets/d/1VlyKFRN8fVg-4gFYwVWIkSvyNMwS1d_mROlGouVTd6s/edit"
     }
   ],
-  "updatedAt": "2026-01-30T11:47:44.048Z"
+  "updatedAt": "2026-01-30T13:40:19.074Z"
 }
