@@ -211,7 +211,7 @@
       "status": "active",
       "category": "personal",
       "order": 2,
-      "summary": "English gift angle preferred. No specific interests for recipient. Research UK items that ship to Pakistan - thoughtful + humorous British items.",
+      "summary": "Recommendation sent: Fortnum & Mason hamper (top pick), or Paddington/Peter Rabbit for toddler. Awaiting Jordons choice.",
       "questionsForHuman": [],
       "nextSteps": [
         "Find 3-5 UK gift options that ship to Pakistan",
@@ -224,6 +224,12 @@
       "lastActivity": "Researched expressgiftservice.com: Lindt Classic Mens Hamper $41 (~£33). Site offers same-day delivery across Pakistan, handles customs. Top pick for simplicity within budget.",
       "lastActivityAt": "2026-01-30T19:17:01.923Z",
       "activityLog": [
+        {
+          "timestamp": "2026-01-31T10:27:30.286391+00:00",
+          "action": "note",
+          "description": "Sent gift recommendations via Telegram: F&M hamper, Paddington set, or expressgiftservice fallback.",
+          "source": "eric"
+        },
         {
           "timestamp": "2026-01-30T19:17:01.923Z",
           "action": "note",
@@ -298,24 +304,25 @@
       "status": "active",
       "category": "personal",
       "order": 0,
-      "summary": "Need to decide business structure before taking revenue. Options: keep UK Ltd, move to Spain, sole trader, close and restart. Must understand tax implications.",
+      "summary": "UK Ltd actively trading (day job revenue). Slack app revenue in 1-3mo. Spain move in 3-5yr. Need tax strategy before new revenue.",
       "questionsForHuman": [
-        "Current legal structure? (Ltd company, sole trader?)",
-        "Is Sumaq Consulting currently dormant or actively trading?",
-        "When do you expect first revenue from our projects?",
-        "Spain specifically, or open to other EU countries?",
-        "Would you consider keeping UK tax residency initially?"
+        "Will you maintain any UK presence (house, address) after moving to Spain?"
       ],
       "nextSteps": [
-        "Research UK Ltd vs sole trader for international moves",
-        "Understand Spain tax residency rules (183-day rule)",
-        "Research UK-Spain double taxation treaty",
-        "Explore Estonia e-Residency / EU-friendly structures",
-        "Consult accountant once options narrowed"
+        "Research Spain Beckham Law (24% flat tax)",
+        "UK-Spain double taxation treaty",
+        "Keep UK Ltd vs start Spanish entity",
+        "Tax residency timing (183-day rule)"
       ],
       "createdAt": "2026-01-31T10:24:54.381141Z",
       "updatedAt": "2026-01-31T10:24:54.381223Z",
       "activityLog": [
+        {
+          "timestamp": "2026-01-31T10:27:30.286391+00:00",
+          "action": "note",
+          "description": "Answers: UK Ltd active, day job through it, Slack revenue 1-3mo, Spain preferred (wife Peruvian).",
+          "source": "eric"
+        },
         {
           "timestamp": "2026-01-31T10:24:54.381249Z",
           "action": "note",
@@ -325,5 +332,5 @@
       ]
     }
   ],
-  "updatedAt": "2026-01-31T10:25:35.641Z"
+  "updatedAt": "2026-01-31T10:27:34.549Z"
 }
