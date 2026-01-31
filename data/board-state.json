@@ -283,7 +283,40 @@
           "source": "api"
         }
       ]
+    },
+    {
+      "id": "uk-business-tax-planning",
+      "name": "UK Business Tax Planning (EU Relocation)",
+      "description": "Research tax-efficient options for Sumaq Consulting given planned move to Spain/Europe in 3-5 years.",
+      "status": "active",
+      "category": "personal",
+      "order": 0,
+      "summary": "Need to decide business structure before taking revenue. Options: keep UK Ltd, move to Spain, sole trader, close and restart. Must understand tax implications.",
+      "questionsForHuman": [
+        "Current legal structure? (Ltd company, sole trader?)",
+        "Is Sumaq Consulting currently dormant or actively trading?",
+        "When do you expect first revenue from our projects?",
+        "Spain specifically, or open to other EU countries?",
+        "Would you consider keeping UK tax residency initially?"
+      ],
+      "nextSteps": [
+        "Research UK Ltd vs sole trader for international moves",
+        "Understand Spain tax residency rules (183-day rule)",
+        "Research UK-Spain double taxation treaty",
+        "Explore Estonia e-Residency / EU-friendly structures",
+        "Consult accountant once options narrowed"
+      ],
+      "createdAt": "2026-01-31T10:24:54.381141Z",
+      "updatedAt": "2026-01-31T10:24:54.381223Z",
+      "activityLog": [
+        {
+          "timestamp": "2026-01-31T10:24:54.381249Z",
+          "action": "note",
+          "description": "Project created. Planning EU relocation in 3-5 years, needs tax strategy before taking revenue.",
+          "source": "eric"
+        }
+      ]
     }
   ],
-  "updatedAt": "2026-01-31T09:16:16.254Z"
+  "updatedAt": "2026-01-31T10:24:54.548Z"
 }
