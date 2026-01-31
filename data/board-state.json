@@ -251,11 +251,12 @@
       "status": "active",
       "category": "work",
       "order": 1,
-      "summary": "Pivot to ongoing research. Most tracer bullets not monetizable. Focus: problems non-technical people have that we can solve for small monthly fee.",
+      "summary": "Focus: $3-5/month subscriptions. Target technical tasks people need for work but lack time/tools. Broad research → analyze → narrow to tracer bullets.",
       "nextSteps": [
-        "Continue landscape research (ongoing)",
-        "Study successful micro-SaaS examples",
-        "Identify non-technical user pain points"
+        "Broad exploration: research problems across professions",
+        "Analysis: identify patterns and viable opportunities",
+        "Narrow: select top candidates for tracer bullets",
+        "Build tracer bullets for validation"
       ],
       "questionsForHuman": [],
       "createdAt": "2026-01-30T11:35:00Z",
@@ -264,6 +265,12 @@
       "lastActivity": "Questions answered by Jordon: Most tracer bullets not monetizable. Pivoting to ongoing landscape research. Questions should be cleared but PATCH API not updating.",
       "lastActivityAt": "2026-01-31T09:13:10.003Z",
       "activityLog": [
+        {
+          "timestamp": "2026-01-31T10:25:29.527496Z",
+          "action": "note",
+          "description": "New direction from Jordon: $3-5/mo subscriptions, technical work tasks people need but lack time/tools. Broad research → analyze → tracer bullets.",
+          "source": "eric"
+        },
         {
           "timestamp": "2026-01-31T09:13:10.003Z",
           "action": "note",
@@ -318,5 +325,5 @@
       ]
     }
   ],
-  "updatedAt": "2026-01-31T10:24:54.548Z"
+  "updatedAt": "2026-01-31T10:25:35.641Z"
 }
