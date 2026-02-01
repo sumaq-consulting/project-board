@@ -266,11 +266,17 @@
       ],
       "questionsForHuman": [],
       "createdAt": "2026-01-30T11:35:00Z",
-      "updatedAt": "2026-02-01T04:32:04.659Z",
+      "updatedAt": "2026-02-01T04:59:48.503Z",
       "summaryUrl": "https://docs.google.com/spreadsheets/d/1VlyKFRN8fVg-4gFYwVWIkSvyNMwS1d_mROlGouVTd6s/edit",
-      "lastActivity": "Continued landscape research. Analyzed Reddit pain points (invoice reminders, reports, inventory). Reviewed Indie Hackers success stories (Api2Pdf $10k MRR, Tally.so $60k MRR). Emerging hypothesis: $3-5/mo works for one-click utilities, niche calculators, or scheduled micro-tasks.",
-      "lastActivityAt": "2026-02-01T04:32:04.659Z",
+      "lastActivity": "Analyzed Gumroad best sellers. Key insight: $1-15 one-time products convert better than subscriptions. For $3-5/mo subscription to work, need ongoing value (updates/monitoring), recurring need (weekly/monthly task), and clear ROI.",
+      "lastActivityAt": "2026-02-01T04:59:48.503Z",
       "activityLog": [
+        {
+          "timestamp": "2026-02-01T04:59:48.503Z",
+          "action": "note",
+          "description": "Analyzed Gumroad best sellers. Key insight: $1-15 one-time products convert better than subscriptions. For $3-5/mo subscription to work, need ongoing value (updates/monitoring), recurring need (weekly/monthly task), and clear ROI.",
+          "source": "api"
+        },
         {
           "timestamp": "2026-02-01T04:32:04.659Z",
           "action": "note",
