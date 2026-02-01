@@ -266,11 +266,17 @@
       ],
       "questionsForHuman": [],
       "createdAt": "2026-01-30T11:35:00Z",
-      "updatedAt": "2026-02-01T05:29:43.217Z",
+      "updatedAt": "2026-02-01T05:30:44.471Z",
       "summaryUrl": "https://docs.google.com/spreadsheets/d/1VlyKFRN8fVg-4gFYwVWIkSvyNMwS1d_mROlGouVTd6s/edit",
-      "lastActivity": "Validated 5 candidate ideas against competition. Results: Screenshot Archive (Stillio $29+), API Monitoring (free options exist), Form→Doc (saturated). Two ideas worth exploring: Recurring File Deliveries (simpler than Zapier) and Meeting Cost Calculator (niche positioning).",
-      "lastActivityAt": "2026-02-01T05:29:43.217Z",
+      "lastActivity": "Generated 5 new candidate ideas focused on single-purpose simplicity: Spreadsheet Reminder Bot, Weekly Digest Emailer, Simple Mail Merge, Ping Me When (page change monitor), Invoice Reminder Service. All target $3-5/mo price point.",
+      "lastActivityAt": "2026-02-01T05:30:44.471Z",
       "activityLog": [
+        {
+          "timestamp": "2026-02-01T05:30:44.471Z",
+          "action": "note",
+          "description": "Generated 5 new candidate ideas focused on single-purpose simplicity: Spreadsheet Reminder Bot, Weekly Digest Emailer, Simple Mail Merge, Ping Me When (page change monitor), Invoice Reminder Service. All target $3-5/mo price point.",
+          "source": "api"
+        },
         {
           "timestamp": "2026-02-01T05:29:43.217Z",
           "action": "note",
