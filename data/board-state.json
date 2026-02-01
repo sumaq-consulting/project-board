@@ -266,11 +266,17 @@
       ],
       "questionsForHuman": [],
       "createdAt": "2026-01-30T11:35:00Z",
-      "updatedAt": "2026-02-01T05:30:44.471Z",
+      "updatedAt": "2026-02-01T05:59:58.722Z",
       "summaryUrl": "https://docs.google.com/spreadsheets/d/1VlyKFRN8fVg-4gFYwVWIkSvyNMwS1d_mROlGouVTd6s/edit",
-      "lastActivity": "Generated 5 new candidate ideas focused on single-purpose simplicity: Spreadsheet Reminder Bot, Weekly Digest Emailer, Simple Mail Merge, Ping Me When (page change monitor), Invoice Reminder Service. All target $3-5/mo price point.",
-      "lastActivityAt": "2026-02-01T05:30:44.471Z",
+      "lastActivity": "Validated 5 more candidates. Eliminated: Spreadsheet Reminder (free add-on exists), Page Monitor (Visualping/free tools), Invoice Reminder (built into invoicing tools). 3-4 ideas still viable: Recurring File Deliveries, Meeting Cost Calculator, Weekly Digest Emailer, Simple Mail Merge.",
+      "lastActivityAt": "2026-02-01T05:59:58.722Z",
       "activityLog": [
+        {
+          "timestamp": "2026-02-01T05:59:58.722Z",
+          "action": "note",
+          "description": "Validated 5 more candidates. Eliminated: Spreadsheet Reminder (free add-on exists), Page Monitor (Visualping/free tools), Invoice Reminder (built into invoicing tools). 3-4 ideas still viable: Recurring File Deliveries, Meeting Cost Calculator, Weekly Digest Emailer, Simple Mail Merge.",
+          "source": "api"
+        },
         {
           "timestamp": "2026-02-01T05:30:44.471Z",
           "action": "note",
