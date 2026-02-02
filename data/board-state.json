@@ -99,12 +99,18 @@
         "Find beta testers / launch communities"
       ],
       "createdAt": "2026-01-28T10:00:00Z",
-      "updatedAt": "2026-02-02T04:01:59.245Z",
+      "updatedAt": "2026-02-02T04:29:53.731Z",
       "summaryUrl": "https://docs.google.com/document/d/1nKgm-wsqwXJxGwcw9rDx6jDUpP6JTrjlf_4KIc4hFT0/edit",
       "prdUrl": "https://docs.google.com/document/d/1zzl9OjEfTeV-34kEXfnA396cKKRuUgkFwwW0IlcvCIo/edit",
-      "lastActivity": "Reviewed Slack integration spec. Phase 1 (Slack App Setup at api.slack.com) needs Jordon to create app + add OAuth scopes + configure URLs. Once done, Phases 2-5 (image notifications, approve button, reply modal, e2e) can be implemented.",
-      "lastActivityAt": "2026-02-02T04:01:59.245Z",
+      "lastActivity": "Spawned sub-agent to scaffold Slack integration code (router, interactivity handler, signature verification, Block Kit builder). Building ahead while awaiting Slack App setup.",
+      "lastActivityAt": "2026-02-02T04:29:53.731Z",
       "activityLog": [
+        {
+          "timestamp": "2026-02-02T04:29:53.731Z",
+          "action": "work_completed",
+          "description": "Spawned sub-agent to scaffold Slack integration code (router, interactivity handler, signature verification, Block Kit builder). Building ahead while awaiting Slack App setup.",
+          "source": "api"
+        },
         {
           "timestamp": "2026-02-02T04:01:59.245Z",
           "action": "note",
