@@ -78,7 +78,17 @@
         "Token rotation (quarterly reminder)"
       ],
       "createdAt": "2026-01-28T10:00:00Z",
-      "updatedAt": "2026-01-30T11:31:09.205Z"
+      "updatedAt": "2026-02-02T05:46:28.125Z",
+      "lastActivity": "Daily intel scraper ran. 145 posts found. Key items: Sonnet 5 possible Feb 3 release, MCP permission changes in Claude Desktop, Gokin budget alternative. Server healthy.",
+      "lastActivityAt": "2026-02-02T05:46:28.125Z",
+      "activityLog": [
+        {
+          "timestamp": "2026-02-02T05:46:28.125Z",
+          "action": "work_completed",
+          "description": "Daily intel scraper ran. 145 posts found. Key items: Sonnet 5 possible Feb 3 release, MCP permission changes in Claude Desktop, Gokin budget alternative. Server healthy.",
+          "source": "api"
+        }
+      ]
     },
     {
       "id": "slack-feedback-app",
