@@ -109,12 +109,18 @@
         "Find beta testers / launch communities"
       ],
       "createdAt": "2026-01-28T10:00:00Z",
-      "updatedAt": "2026-02-02T04:59:44.798Z",
+      "updatedAt": "2026-02-03T04:26:44.218Z",
       "summaryUrl": "https://docs.google.com/document/d/1nKgm-wsqwXJxGwcw9rDx6jDUpP6JTrjlf_4KIc4hFT0/edit",
       "prdUrl": "https://docs.google.com/document/d/1zzl9OjEfTeV-34kEXfnA396cKKRuUgkFwwW0IlcvCIo/edit",
-      "lastActivity": "Pushed slack integration scaffold to GitHub and created PR #2. Ready for review once Slack App tokens available.",
-      "lastActivityAt": "2026-02-02T04:59:44.798Z",
+      "lastActivity": "Blocked on Slack App setup at api.slack.com. Need Bot Token + Signing Secret. 6 days to Peru deadline. Chase sent.",
+      "lastActivityAt": "2026-02-03T04:26:44.218Z",
       "activityLog": [
+        {
+          "timestamp": "2026-02-03T04:26:44.218Z",
+          "action": "blocked",
+          "description": "Blocked on Slack App setup at api.slack.com. Need Bot Token + Signing Secret. 6 days to Peru deadline. Chase sent.",
+          "source": "api"
+        },
         {
           "timestamp": "2026-02-02T04:59:44.798Z",
           "action": "work_completed",
