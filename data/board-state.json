@@ -78,10 +78,16 @@
         "Token rotation (quarterly reminder)"
       ],
       "createdAt": "2026-01-28T10:00:00Z",
-      "updatedAt": "2026-02-02T05:46:28.125Z",
-      "lastActivity": "Daily intel scraper ran. 145 posts found. Key items: Sonnet 5 possible Feb 3 release, MCP permission changes in Claude Desktop, Gokin budget alternative. Server healthy.",
-      "lastActivityAt": "2026-02-02T05:46:28.125Z",
+      "updatedAt": "2026-02-03T05:47:16.164Z",
+      "lastActivity": "Daily intel scraper ran. 136 posts found. Key items: ClawGate (zero-trust file access), OpenClaw Harness (security guard), Opus 4.5 context issues, Ralph Loops controversy. Server healthy (4d uptime).",
+      "lastActivityAt": "2026-02-03T05:47:16.164Z",
       "activityLog": [
+        {
+          "timestamp": "2026-02-03T05:47:16.164Z",
+          "action": "work_completed",
+          "description": "Daily intel scraper ran. 136 posts found. Key items: ClawGate (zero-trust file access), OpenClaw Harness (security guard), Opus 4.5 context issues, Ralph Loops controversy. Server healthy (4d uptime).",
+          "source": "api"
+        },
         {
           "timestamp": "2026-02-02T05:46:28.125Z",
           "action": "work_completed",
