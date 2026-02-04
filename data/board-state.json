@@ -318,11 +318,17 @@
       ],
       "questionsForHuman": [],
       "createdAt": "2026-01-30T11:35:00Z",
-      "updatedAt": "2026-02-04T04:01:52.939Z",
+      "updatedAt": "2026-02-04T12:00:00.304Z",
       "summaryUrl": "https://docs.google.com/spreadsheets/d/1VlyKFRN8fVg-4gFYwVWIkSvyNMwS1d_mROlGouVTd6s/edit",
-      "lastActivity": "Eliminated Simple Mail Merge (Mailmeteor owns space at $10/mo, 6M users). Pivoted to niche-first thinking: targeting assistant/EA roles. Added 2 new candidates: Follow-Up Tracker, Meeting Prep Generator. 3 ideas remain viable.",
-      "lastActivityAt": "2026-02-04T04:01:52.939Z",
+      "lastActivity": "Eliminated 2 more ideas: Weekly Digest Emailer (Google add-ons saturate), Follow-Up Tracker (Boomerang/FollowUpThen own space). Down to 2 viable + 1 needs validation. Pattern: obvious productivity tools are saturated, need niche/role-specific angles.",
+      "lastActivityAt": "2026-02-04T12:00:00.304Z",
       "activityLog": [
+        {
+          "timestamp": "2026-02-04T12:00:00.304Z",
+          "action": "note",
+          "description": "Eliminated 2 more ideas: Weekly Digest Emailer (Google add-ons saturate), Follow-Up Tracker (Boomerang/FollowUpThen own space). Down to 2 viable + 1 needs validation. Pattern: obvious productivity tools are saturated, need niche/role-specific angles.",
+          "source": "api"
+        },
         {
           "timestamp": "2026-02-04T04:01:52.939Z",
           "action": "note",
@@ -375,12 +381,6 @@
           "timestamp": "2026-01-31T09:13:10.003Z",
           "action": "note",
           "description": "Questions answered by Jordon: Most tracer bullets not monetizable. Pivoting to ongoing landscape research. Questions should be cleared but PATCH API not updating.",
-          "source": "api"
-        },
-        {
-          "timestamp": "2026-01-30T20:00:25.621Z",
-          "action": "note",
-          "description": "Started landscape-research.md - framework for ongoing research. Key focus: non-technical user pain points, pricing sweet spots ($9-29/mo), and what makes micro-SaaS monetizable. Initial research from Microns.io captured.",
           "source": "api"
         }
       ]
