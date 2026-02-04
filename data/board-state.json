@@ -312,11 +312,17 @@
       ],
       "questionsForHuman": [],
       "createdAt": "2026-01-30T11:35:00Z",
-      "updatedAt": "2026-02-01T05:59:58.722Z",
+      "updatedAt": "2026-02-04T04:01:52.939Z",
       "summaryUrl": "https://docs.google.com/spreadsheets/d/1VlyKFRN8fVg-4gFYwVWIkSvyNMwS1d_mROlGouVTd6s/edit",
-      "lastActivity": "Validated 5 more candidates. Eliminated: Spreadsheet Reminder (free add-on exists), Page Monitor (Visualping/free tools), Invoice Reminder (built into invoicing tools). 3-4 ideas still viable: Recurring File Deliveries, Meeting Cost Calculator, Weekly Digest Emailer, Simple Mail Merge.",
-      "lastActivityAt": "2026-02-01T05:59:58.722Z",
+      "lastActivity": "Eliminated Simple Mail Merge (Mailmeteor owns space at $10/mo, 6M users). Pivoted to niche-first thinking: targeting assistant/EA roles. Added 2 new candidates: Follow-Up Tracker, Meeting Prep Generator. 3 ideas remain viable.",
+      "lastActivityAt": "2026-02-04T04:01:52.939Z",
       "activityLog": [
+        {
+          "timestamp": "2026-02-04T04:01:52.939Z",
+          "action": "note",
+          "description": "Eliminated Simple Mail Merge (Mailmeteor owns space at $10/mo, 6M users). Pivoted to niche-first thinking: targeting assistant/EA roles. Added 2 new candidates: Follow-Up Tracker, Meeting Prep Generator. 3 ideas remain viable.",
+          "source": "api"
+        },
         {
           "timestamp": "2026-02-01T05:59:58.722Z",
           "action": "note",
@@ -369,12 +375,6 @@
           "timestamp": "2026-01-30T20:00:25.621Z",
           "action": "note",
           "description": "Started landscape-research.md - framework for ongoing research. Key focus: non-technical user pain points, pricing sweet spots ($9-29/mo), and what makes micro-SaaS monetizable. Initial research from Microns.io captured.",
-          "source": "api"
-        },
-        {
-          "timestamp": "2026-01-30T19:59:27.846Z",
-          "action": "note",
-          "description": "Jordon directive: Shift focus to ongoing background research. Most current ideas not monetizable. Need to understand micro-SaaS landscape - what problems do non-technical people have that we can solve for a small monthly fee? Feature planning idea had legs but is full SaaS not micro.",
           "source": "api"
         }
       ]
