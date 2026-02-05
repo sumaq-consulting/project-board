@@ -324,11 +324,17 @@
       ],
       "questionsForHuman": [],
       "createdAt": "2026-01-30T11:35:00Z",
-      "updatedAt": "2026-02-04T12:00:00.304Z",
+      "updatedAt": "2026-02-05T04:02:21.382Z",
       "summaryUrl": "https://docs.google.com/spreadsheets/d/1VlyKFRN8fVg-4gFYwVWIkSvyNMwS1d_mROlGouVTd6s/edit",
-      "lastActivity": "Eliminated 2 more ideas: Weekly Digest Emailer (Google add-ons saturate), Follow-Up Tracker (Boomerang/FollowUpThen own space). Down to 2 viable + 1 needs validation. Pattern: obvious productivity tools are saturated, need niche/role-specific angles.",
-      "lastActivityAt": "2026-02-04T12:00:00.304Z",
+      "lastActivity": "Researched EA/assistant pain points for niche targeting. Key areas: calendar management, email triage, travel coordination, competing priorities. Meeting Prep Generator still viable. Pattern: assistants price-sensitive but time savings = direct value.",
+      "lastActivityAt": "2026-02-05T04:02:21.382Z",
       "activityLog": [
+        {
+          "timestamp": "2026-02-05T04:02:21.382Z",
+          "action": "note",
+          "description": "Researched EA/assistant pain points for niche targeting. Key areas: calendar management, email triage, travel coordination, competing priorities. Meeting Prep Generator still viable. Pattern: assistants price-sensitive but time savings = direct value.",
+          "source": "api"
+        },
         {
           "timestamp": "2026-02-04T12:00:00.304Z",
           "action": "note",
@@ -382,12 +388,6 @@
           "action": "note",
           "description": "New direction from Jordon: $3-5/mo subscriptions, technical work tasks people need but lack time/tools. Broad research → analyze → tracer bullets.",
           "source": "eric"
-        },
-        {
-          "timestamp": "2026-01-31T09:13:10.003Z",
-          "action": "note",
-          "description": "Questions answered by Jordon: Most tracer bullets not monetizable. Pivoting to ongoing landscape research. Questions should be cleared but PATCH API not updating.",
-          "source": "api"
         }
       ]
     },
