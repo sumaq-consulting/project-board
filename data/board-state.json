@@ -78,10 +78,16 @@
         "Token rotation (quarterly reminder)"
       ],
       "createdAt": "2026-01-28T10:00:00Z",
-      "updatedAt": "2026-02-05T05:46:15.079Z",
-      "lastActivity": "Full intel pipeline ran (5:45 UTC). 131 posts scanned. Key: Opus 4.6/Sonnet 5 imminent, GitHub Copilot adds Claude, Rho mobile agent discovered. Summary delivered to Jordon.",
-      "lastActivityAt": "2026-02-05T05:46:15.079Z",
+      "updatedAt": "2026-02-05T06:00:41.674Z",
+      "lastActivity": "Daily brief pipeline ran (6:00 UTC). Claude Code v2.1.31 released. DEV.to header injection security article. News: IBM+Anthropic partnership, malicious crypto skills found in OpenClaw. Brief delivered.",
+      "lastActivityAt": "2026-02-05T06:00:41.674Z",
       "activityLog": [
+        {
+          "timestamp": "2026-02-05T06:00:41.674Z",
+          "action": "work_completed",
+          "description": "Daily brief pipeline ran (6:00 UTC). Claude Code v2.1.31 released. DEV.to header injection security article. News: IBM+Anthropic partnership, malicious crypto skills found in OpenClaw. Brief delivered.",
+          "source": "api"
+        },
         {
           "timestamp": "2026-02-05T05:46:15.079Z",
           "action": "work_completed",
