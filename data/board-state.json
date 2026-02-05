@@ -78,10 +78,16 @@
         "Token rotation (quarterly reminder)"
       ],
       "createdAt": "2026-01-28T10:00:00Z",
-      "updatedAt": "2026-02-05T04:02:20.461Z",
-      "lastActivity": "Daily intel scraper ran. 131 posts found. BIG NEWS: Opus 4.6 + Sonnet 5 leaks confirmed (imminent). Sonnet 5 removing visible thinking blocks. GitHub Copilot now supports Claude/Codex. Server healthy (6d uptime).",
-      "lastActivityAt": "2026-02-05T04:02:20.461Z",
+      "updatedAt": "2026-02-05T05:46:15.079Z",
+      "lastActivity": "Full intel pipeline ran (5:45 UTC). 131 posts scanned. Key: Opus 4.6/Sonnet 5 imminent, GitHub Copilot adds Claude, Rho mobile agent discovered. Summary delivered to Jordon.",
+      "lastActivityAt": "2026-02-05T05:46:15.079Z",
       "activityLog": [
+        {
+          "timestamp": "2026-02-05T05:46:15.079Z",
+          "action": "work_completed",
+          "description": "Full intel pipeline ran (5:45 UTC). 131 posts scanned. Key: Opus 4.6/Sonnet 5 imminent, GitHub Copilot adds Claude, Rho mobile agent discovered. Summary delivered to Jordon.",
+          "source": "api"
+        },
         {
           "timestamp": "2026-02-05T04:02:20.461Z",
           "action": "work_completed",
