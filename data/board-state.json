@@ -78,10 +78,16 @@
         "Token rotation (quarterly reminder)"
       ],
       "createdAt": "2026-01-28T10:00:00Z",
-      "updatedAt": "2026-02-04T05:46:27.459Z",
-      "lastActivity": "Daily intel scraper ran. 125 posts found. BIG NEWS: Xcode 26.3 adds agentic coding with Claude Agent + OpenAI Codex via MCP. Also: SWE-Pruner 40% token savings, Opus performance reports, Skills-Lint tool. Server healthy (5d uptime).",
-      "lastActivityAt": "2026-02-04T05:46:27.459Z",
+      "updatedAt": "2026-02-05T04:02:20.461Z",
+      "lastActivity": "Daily intel scraper ran. 131 posts found. BIG NEWS: Opus 4.6 + Sonnet 5 leaks confirmed (imminent). Sonnet 5 removing visible thinking blocks. GitHub Copilot now supports Claude/Codex. Server healthy (6d uptime).",
+      "lastActivityAt": "2026-02-05T04:02:20.461Z",
       "activityLog": [
+        {
+          "timestamp": "2026-02-05T04:02:20.461Z",
+          "action": "work_completed",
+          "description": "Daily intel scraper ran. 131 posts found. BIG NEWS: Opus 4.6 + Sonnet 5 leaks confirmed (imminent). Sonnet 5 removing visible thinking blocks. GitHub Copilot now supports Claude/Codex. Server healthy (6d uptime).",
+          "source": "api"
+        },
         {
           "timestamp": "2026-02-04T05:46:27.459Z",
           "action": "work_completed",
