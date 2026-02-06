@@ -336,11 +336,17 @@
       ],
       "questionsForHuman": [],
       "createdAt": "2026-01-30T11:35:00Z",
-      "updatedAt": "2026-02-05T04:02:21.382Z",
+      "updatedAt": "2026-02-06T04:31:18.758Z",
       "summaryUrl": "https://docs.google.com/spreadsheets/d/1VlyKFRN8fVg-4gFYwVWIkSvyNMwS1d_mROlGouVTd6s/edit",
-      "lastActivity": "Researched EA/assistant pain points for niche targeting. Key areas: calendar management, email triage, travel coordination, competing priorities. Meeting Prep Generator still viable. Pattern: assistants price-sensitive but time savings = direct value.",
-      "lastActivityAt": "2026-02-05T04:02:21.382Z",
+      "lastActivity": "Eliminated Meeting Prep Generator (MeetingIQ free competitor). Down to 2 viable ideas. Pivoting to boring industries thesis: trades, local services, spreadsheet hell.",
+      "lastActivityAt": "2026-02-06T04:31:18.758Z",
       "activityLog": [
+        {
+          "timestamp": "2026-02-06T04:31:18.758Z",
+          "action": "note",
+          "description": "Eliminated Meeting Prep Generator (MeetingIQ free competitor). Down to 2 viable ideas. Pivoting to boring industries thesis: trades, local services, spreadsheet hell.",
+          "source": "api"
+        },
         {
           "timestamp": "2026-02-05T04:02:21.382Z",
           "action": "note",
@@ -394,12 +400,6 @@
           "action": "note",
           "description": "Created landscape-research.md framework. Documented price point analysis ($3-5/mo requires 1000+ users), 5 pattern categories (data transforms, automation, sync, content gen, monitoring), and 5 initial candidate ideas for validation.",
           "source": "api"
-        },
-        {
-          "timestamp": "2026-01-31T10:25:29.527496Z",
-          "action": "note",
-          "description": "New direction from Jordon: $3-5/mo subscriptions, technical work tasks people need but lack time/tools. Broad research → analyze → tracer bullets.",
-          "source": "eric"
         }
       ]
     },
