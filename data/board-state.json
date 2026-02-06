@@ -348,11 +348,17 @@
       ],
       "questionsForHuman": [],
       "createdAt": "2026-01-30T11:35:00Z",
-      "updatedAt": "2026-02-06T04:31:18.758Z",
+      "updatedAt": "2026-02-06T11:29:35.161Z",
       "summaryUrl": "https://docs.google.com/spreadsheets/d/1VlyKFRN8fVg-4gFYwVWIkSvyNMwS1d_mROlGouVTd6s/edit",
-      "lastActivity": "Eliminated Meeting Prep Generator (MeetingIQ free competitor). Down to 2 viable ideas. Pivoting to boring industries thesis: trades, local services, spreadsheet hell.",
-      "lastActivityAt": "2026-02-06T04:31:18.758Z",
+      "lastActivity": "Researched trades (plumber/electrician) subreddits. Key insight: complaint is complexity/cost of big tools (Service Titan). Opportunity: single-purpose features those tools do poorly (job pricing history, simple profit tracking).",
+      "lastActivityAt": "2026-02-06T11:29:35.161Z",
       "activityLog": [
+        {
+          "timestamp": "2026-02-06T11:29:35.161Z",
+          "action": "note",
+          "description": "Researched trades (plumber/electrician) subreddits. Key insight: complaint is complexity/cost of big tools (Service Titan). Opportunity: single-purpose features those tools do poorly (job pricing history, simple profit tracking).",
+          "source": "api"
+        },
         {
           "timestamp": "2026-02-06T04:31:18.758Z",
           "action": "note",
@@ -405,12 +411,6 @@
           "timestamp": "2026-02-01T04:32:04.659Z",
           "action": "note",
           "description": "Continued landscape research. Analyzed Reddit pain points (invoice reminders, reports, inventory). Reviewed Indie Hackers success stories (Api2Pdf $10k MRR, Tally.so $60k MRR). Emerging hypothesis: $3-5/mo works for one-click utilities, niche calculators, or scheduled micro-tasks.",
-          "source": "api"
-        },
-        {
-          "timestamp": "2026-02-01T04:30:25.561Z",
-          "action": "note",
-          "description": "Created landscape-research.md framework. Documented price point analysis ($3-5/mo requires 1000+ users), 5 pattern categories (data transforms, automation, sync, content gen, monitoring), and 5 initial candidate ideas for validation.",
           "source": "api"
         }
       ]
