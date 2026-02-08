@@ -354,11 +354,17 @@
       ],
       "questionsForHuman": [],
       "createdAt": "2026-01-30T11:35:00Z",
-      "updatedAt": "2026-02-06T11:29:35.161Z",
+      "updatedAt": "2026-02-08T04:01:55.615Z",
       "summaryUrl": "https://docs.google.com/spreadsheets/d/1VlyKFRN8fVg-4gFYwVWIkSvyNMwS1d_mROlGouVTd6s/edit",
-      "lastActivity": "Researched trades (plumber/electrician) subreddits. Key insight: complaint is complexity/cost of big tools (Service Titan). Opportunity: single-purpose features those tools do poorly (job pricing history, simple profit tracking).",
-      "lastActivityAt": "2026-02-06T11:29:35.161Z",
+      "lastActivity": "Researched trades software complaints. Key insight: big tools are \"overkill\" - giving Ferrari to pickup truck needs. Identified 5 new candidates: Job Pricer, Text Reminder, Photo Archive, Solo Profit Tracker, Material Estimator. All target $3-5/mo.",
+      "lastActivityAt": "2026-02-08T04:01:55.615Z",
       "activityLog": [
+        {
+          "timestamp": "2026-02-08T04:01:55.615Z",
+          "action": "note",
+          "description": "Researched trades software complaints. Key insight: big tools are \"overkill\" - giving Ferrari to pickup truck needs. Identified 5 new candidates: Job Pricer, Text Reminder, Photo Archive, Solo Profit Tracker, Material Estimator. All target $3-5/mo.",
+          "source": "api"
+        },
         {
           "timestamp": "2026-02-06T11:29:35.161Z",
           "action": "note",
@@ -411,12 +417,6 @@
           "timestamp": "2026-02-01T04:59:48.503Z",
           "action": "note",
           "description": "Analyzed Gumroad best sellers. Key insight: $1-15 one-time products convert better than subscriptions. For $3-5/mo subscription to work, need ongoing value (updates/monitoring), recurring need (weekly/monthly task), and clear ROI.",
-          "source": "api"
-        },
-        {
-          "timestamp": "2026-02-01T04:32:04.659Z",
-          "action": "note",
-          "description": "Continued landscape research. Analyzed Reddit pain points (invoice reminders, reports, inventory). Reviewed Indie Hackers success stories (Api2Pdf $10k MRR, Tally.so $60k MRR). Emerging hypothesis: $3-5/mo works for one-click utilities, niche calculators, or scheduled micro-tasks.",
           "source": "api"
         }
       ]
