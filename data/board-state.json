@@ -360,11 +360,17 @@
       ],
       "questionsForHuman": [],
       "createdAt": "2026-01-30T11:35:00Z",
-      "updatedAt": "2026-02-08T04:01:55.615Z",
+      "updatedAt": "2026-02-09T04:01:37.708Z",
       "summaryUrl": "https://docs.google.com/spreadsheets/d/1VlyKFRN8fVg-4gFYwVWIkSvyNMwS1d_mROlGouVTd6s/edit",
-      "lastActivity": "Researched trades software complaints. Key insight: big tools are \"overkill\" - giving Ferrari to pickup truck needs. Identified 5 new candidates: Job Pricer, Text Reminder, Photo Archive, Solo Profit Tracker, Material Estimator. All target $3-5/mo.",
-      "lastActivityAt": "2026-02-08T04:01:55.615Z",
+      "lastActivity": "Researched Flowjam micro-SaaS examples. Key patterns: local/offline niches (dog groomers $9k MRR, church CRM €22k MRR), SaaS-for-SaaS (Stripe analytics), creator economy tools. Best signal: \"niche has <2000 attendees at annual conference\" rule. All 27 examples have 1-3 person teams.",
+      "lastActivityAt": "2026-02-09T04:01:37.708Z",
       "activityLog": [
+        {
+          "timestamp": "2026-02-09T04:01:37.708Z",
+          "action": "note",
+          "description": "Researched Flowjam micro-SaaS examples. Key patterns: local/offline niches (dog groomers $9k MRR, church CRM €22k MRR), SaaS-for-SaaS (Stripe analytics), creator economy tools. Best signal: \"niche has <2000 attendees at annual conference\" rule. All 27 examples have 1-3 person teams.",
+          "source": "api"
+        },
         {
           "timestamp": "2026-02-08T04:01:55.615Z",
           "action": "note",
@@ -417,12 +423,6 @@
           "timestamp": "2026-02-01T05:29:43.217Z",
           "action": "note",
           "description": "Validated 5 candidate ideas against competition. Results: Screenshot Archive (Stillio $29+), API Monitoring (free options exist), Form→Doc (saturated). Two ideas worth exploring: Recurring File Deliveries (simpler than Zapier) and Meeting Cost Calculator (niche positioning).",
-          "source": "api"
-        },
-        {
-          "timestamp": "2026-02-01T04:59:48.503Z",
-          "action": "note",
-          "description": "Analyzed Gumroad best sellers. Key insight: $1-15 one-time products convert better than subscriptions. For $3-5/mo subscription to work, need ongoing value (updates/monitoring), recurring need (weekly/monthly task), and clear ROI.",
           "source": "api"
         }
       ]
