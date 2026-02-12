@@ -360,11 +360,17 @@
       ],
       "questionsForHuman": [],
       "createdAt": "2026-01-30T11:35:00Z",
-      "updatedAt": "2026-02-12T04:01:21.444Z",
+      "updatedAt": "2026-02-12T05:29:25.292Z",
       "summaryUrl": "https://docs.google.com/spreadsheets/d/1VlyKFRN8fVg-4gFYwVWIkSvyNMwS1d_mROlGouVTd6s/edit",
-      "lastActivity": "Researched Startup Stash \"7 Boring Micro-SaaS\" article. Confirms trades thesis: plumbers/HVAC/inspectors run 6-figure businesses on clipboard+paper, willing to pay for time savings (\"get home for dinner\"). Pattern: unsexy > hype, painkiller > vitamin. Aligns with our prior trades research.",
-      "lastActivityAt": "2026-02-12T04:01:21.444Z",
+      "lastActivity": "Analyzed RockingWeb 1,000 Micro-SaaS Revenue Study. Key data: 70% earn <$1k/mo BUT 95% profitable in 12mo. Winners: Email tools ($4.2k median), Dev APIs ($3.8k). Best pricing: hybrid (sub+usage) = 21% growth. Freemium converts only 3.7%. Single channel focus beats diversification (40% rely on one organic channel). Domain expertise = 2x success rate. AI-native = 2x faster growth.",
+      "lastActivityAt": "2026-02-12T05:29:25.292Z",
       "activityLog": [
+        {
+          "timestamp": "2026-02-12T05:29:25.292Z",
+          "action": "note",
+          "description": "Analyzed RockingWeb 1,000 Micro-SaaS Revenue Study. Key data: 70% earn <$1k/mo BUT 95% profitable in 12mo. Winners: Email tools ($4.2k median), Dev APIs ($3.8k). Best pricing: hybrid (sub+usage) = 21% growth. Freemium converts only 3.7%. Single channel focus beats diversification (40% rely on one organic channel). Domain expertise = 2x success rate. AI-native = 2x faster growth.",
+          "source": "api"
+        },
         {
           "timestamp": "2026-02-12T04:01:21.444Z",
           "action": "note",
@@ -417,12 +423,6 @@
           "timestamp": "2026-02-04T04:01:52.939Z",
           "action": "note",
           "description": "Eliminated Simple Mail Merge (Mailmeteor owns space at $10/mo, 6M users). Pivoted to niche-first thinking: targeting assistant/EA roles. Added 2 new candidates: Follow-Up Tracker, Meeting Prep Generator. 3 ideas remain viable.",
-          "source": "api"
-        },
-        {
-          "timestamp": "2026-02-01T05:59:58.722Z",
-          "action": "note",
-          "description": "Validated 5 more candidates. Eliminated: Spreadsheet Reminder (free add-on exists), Page Monitor (Visualping/free tools), Invoice Reminder (built into invoicing tools). 3-4 ideas still viable: Recurring File Deliveries, Meeting Cost Calculator, Weekly Digest Emailer, Simple Mail Merge.",
           "source": "api"
         }
       ]
