@@ -360,11 +360,17 @@
       ],
       "questionsForHuman": [],
       "createdAt": "2026-01-30T11:35:00Z",
-      "updatedAt": "2026-02-10T04:14:11.910Z",
+      "updatedAt": "2026-02-12T04:01:21.444Z",
       "summaryUrl": "https://docs.google.com/spreadsheets/d/1VlyKFRN8fVg-4gFYwVWIkSvyNMwS1d_mROlGouVTd6s/edit",
-      "lastActivity": "Researched Superframeworks micro-SaaS analysis. Key data: market $15.7B→$59.6B by 2030 (30% CAGR). 9% MRR lost to failed payments (dunning opportunity). Validation framework: 30 days = landing page + 20 signups + 10-20 interviews. Pattern: hyper-specialized AI tools outperforming generic.",
-      "lastActivityAt": "2026-02-10T04:14:11.910Z",
+      "lastActivity": "Researched Startup Stash \"7 Boring Micro-SaaS\" article. Confirms trades thesis: plumbers/HVAC/inspectors run 6-figure businesses on clipboard+paper, willing to pay for time savings (\"get home for dinner\"). Pattern: unsexy > hype, painkiller > vitamin. Aligns with our prior trades research.",
+      "lastActivityAt": "2026-02-12T04:01:21.444Z",
       "activityLog": [
+        {
+          "timestamp": "2026-02-12T04:01:21.444Z",
+          "action": "note",
+          "description": "Researched Startup Stash \"7 Boring Micro-SaaS\" article. Confirms trades thesis: plumbers/HVAC/inspectors run 6-figure businesses on clipboard+paper, willing to pay for time savings (\"get home for dinner\"). Pattern: unsexy > hype, painkiller > vitamin. Aligns with our prior trades research.",
+          "source": "api"
+        },
         {
           "timestamp": "2026-02-10T04:14:11.910Z",
           "action": "note",
@@ -417,12 +423,6 @@
           "timestamp": "2026-02-01T05:59:58.722Z",
           "action": "note",
           "description": "Validated 5 more candidates. Eliminated: Spreadsheet Reminder (free add-on exists), Page Monitor (Visualping/free tools), Invoice Reminder (built into invoicing tools). 3-4 ideas still viable: Recurring File Deliveries, Meeting Cost Calculator, Weekly Digest Emailer, Simple Mail Merge.",
-          "source": "api"
-        },
-        {
-          "timestamp": "2026-02-01T05:30:44.471Z",
-          "action": "note",
-          "description": "Generated 5 new candidate ideas focused on single-purpose simplicity: Spreadsheet Reminder Bot, Weekly Digest Emailer, Simple Mail Merge, Ping Me When (page change monitor), Invoice Reminder Service. All target $3-5/mo price point.",
           "source": "api"
         }
       ]
