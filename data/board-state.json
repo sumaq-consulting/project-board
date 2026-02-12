@@ -360,11 +360,17 @@
       ],
       "questionsForHuman": [],
       "createdAt": "2026-01-30T11:35:00Z",
-      "updatedAt": "2026-02-12T07:59:25.881Z",
+      "updatedAt": "2026-02-12T09:29:30.010Z",
       "summaryUrl": "https://docs.google.com/spreadsheets/d/1VlyKFRN8fVg-4gFYwVWIkSvyNMwS1d_mROlGouVTd6s/edit",
-      "lastActivity": "Medium article validates trades thesis. Top idea: Voice-to-Task for Field Techs - plumbers/HVAC/electricians speak updates while driving, AI parses into invoice line items. Quote: \"Most successful micro SaaS 2026 are built by people who understand workflow of plumber/lawyer/florist, not C++.\" Also: local compliance tracker, ghost kitchen inventory, B2B video repurposer.",
-      "lastActivityAt": "2026-02-12T07:59:25.881Z",
+      "lastActivity": "HVAC software landscape research. Market segmented: ServiceTitan (residential high-volume), FIELDBOSS (commercial/ERP), Jobber (small teams/simplicity). Gap: solo tradespeople below Jobber tier. Sera Systems mentioned as \"built by plumber himself\" with good support - validates founder-domain-expertise thesis. Voice-to-invoice could fit below Jobber.",
+      "lastActivityAt": "2026-02-12T09:29:30.010Z",
       "activityLog": [
+        {
+          "timestamp": "2026-02-12T09:29:30.010Z",
+          "action": "note",
+          "description": "HVAC software landscape research. Market segmented: ServiceTitan (residential high-volume), FIELDBOSS (commercial/ERP), Jobber (small teams/simplicity). Gap: solo tradespeople below Jobber tier. Sera Systems mentioned as \"built by plumber himself\" with good support - validates founder-domain-expertise thesis. Voice-to-invoice could fit below Jobber.",
+          "source": "api"
+        },
         {
           "timestamp": "2026-02-12T07:59:25.881Z",
           "action": "note",
@@ -417,12 +423,6 @@
           "timestamp": "2026-02-05T04:02:21.382Z",
           "action": "note",
           "description": "Researched EA/assistant pain points for niche targeting. Key areas: calendar management, email triage, travel coordination, competing priorities. Meeting Prep Generator still viable. Pattern: assistants price-sensitive but time savings = direct value.",
-          "source": "api"
-        },
-        {
-          "timestamp": "2026-02-04T12:00:00.304Z",
-          "action": "note",
-          "description": "Eliminated 2 more ideas: Weekly Digest Emailer (Google add-ons saturate), Follow-Up Tracker (Boomerang/FollowUpThen own space). Down to 2 viable + 1 needs validation. Pattern: obvious productivity tools are saturated, need niche/role-specific angles.",
           "source": "api"
         }
       ]
