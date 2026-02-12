@@ -78,10 +78,16 @@
         "Token rotation (quarterly reminder)"
       ],
       "createdAt": "2026-01-28T10:00:00Z",
-      "updatedAt": "2026-02-12T05:46:18.203Z",
-      "lastActivity": "Daily intel pipeline (05:45 UTC). 135 posts. Key: CC v2.1.40 released (skill evolution removed, -293 tokens). 50% violations study (analytics layer built). Multi-agent handoffs trending. BUG: background task cleanup kills nohup processes. Server healthy (13d uptime).",
-      "lastActivityAt": "2026-02-12T05:46:18.203Z",
+      "updatedAt": "2026-02-12T06:00:54.357Z",
+      "lastActivity": "Daily brief (06:00 UTC). Claude free tier expanded (files, connectors, skills) as ChatGPT adds ads. Safety report: Claude vulnerability to chemical weapons dev. Vox: \"February 2020 moment\" - AI inflection point for white-collar work. CC v2.1.39 latest (we stay on 2.1.22).",
+      "lastActivityAt": "2026-02-12T06:00:54.357Z",
       "activityLog": [
+        {
+          "timestamp": "2026-02-12T06:00:54.357Z",
+          "action": "work_completed",
+          "description": "Daily brief (06:00 UTC). Claude free tier expanded (files, connectors, skills) as ChatGPT adds ads. Safety report: Claude vulnerability to chemical weapons dev. Vox: \"February 2020 moment\" - AI inflection point for white-collar work. CC v2.1.39 latest (we stay on 2.1.22).",
+          "source": "api"
+        },
         {
           "timestamp": "2026-02-12T05:46:18.203Z",
           "action": "work_completed",
@@ -134,12 +140,6 @@
           "timestamp": "2026-02-08T05:46:19.462Z",
           "action": "work_completed",
           "description": "Daily intel pipeline (05:45 UTC). 145 posts. Key: codex-mem (99% token reduction), agent-fetch (SSRF protection), HydraTeams (cheaper Agent Teams). WARNING: v2.1.32+ has context blowouts - don't upgrade. Server healthy (9d 21h uptime).",
-          "source": "api"
-        },
-        {
-          "timestamp": "2026-02-07T05:46:56.764Z",
-          "action": "work_completed",
-          "description": "Daily intel pipeline (05:45 UTC). 137 posts. Key: Make Trust Irrelevant paper (kernel-enforced boundaries), Skill Security Framework RFC, Ralph Wiggum auto-loop plugin. Someone wants to build Clawdbot! Server healthy (8d uptime).",
           "source": "api"
         }
       ]
