@@ -360,11 +360,17 @@
       ],
       "questionsForHuman": [],
       "createdAt": "2026-01-30T11:35:00Z",
-      "updatedAt": "2026-02-12T09:29:30.010Z",
+      "updatedAt": "2026-02-12T10:59:18.766Z",
       "summaryUrl": "https://docs.google.com/spreadsheets/d/1VlyKFRN8fVg-4gFYwVWIkSvyNMwS1d_mROlGouVTd6s/edit",
-      "lastActivity": "HVAC software landscape research. Market segmented: ServiceTitan (residential high-volume), FIELDBOSS (commercial/ERP), Jobber (small teams/simplicity). Gap: solo tradespeople below Jobber tier. Sera Systems mentioned as \"built by plumber himself\" with good support - validates founder-domain-expertise thesis. Voice-to-invoice could fit below Jobber.",
-      "lastActivityAt": "2026-02-12T09:29:30.010Z",
+      "lastActivity": "Jobber pricing research: Lite $19/mo (1 user, basic), Core $39-69/mo (solo), Connect/Grow $129-599/mo (teams). Gap confirmed: $3-5/mo voice-to-invoice tool fits well below Jobber Lite. Target users: solo tradespeople who just need voice→invoice, not full FSM suite.",
+      "lastActivityAt": "2026-02-12T10:59:18.766Z",
       "activityLog": [
+        {
+          "timestamp": "2026-02-12T10:59:18.766Z",
+          "action": "note",
+          "description": "Jobber pricing research: Lite $19/mo (1 user, basic), Core $39-69/mo (solo), Connect/Grow $129-599/mo (teams). Gap confirmed: $3-5/mo voice-to-invoice tool fits well below Jobber Lite. Target users: solo tradespeople who just need voice→invoice, not full FSM suite.",
+          "source": "api"
+        },
         {
           "timestamp": "2026-02-12T09:29:30.010Z",
           "action": "note",
@@ -417,12 +423,6 @@
           "timestamp": "2026-02-06T04:31:18.758Z",
           "action": "note",
           "description": "Eliminated Meeting Prep Generator (MeetingIQ free competitor). Down to 2 viable ideas. Pivoting to boring industries thesis: trades, local services, spreadsheet hell.",
-          "source": "api"
-        },
-        {
-          "timestamp": "2026-02-05T04:02:21.382Z",
-          "action": "note",
-          "description": "Researched EA/assistant pain points for niche targeting. Key areas: calendar management, email triage, travel coordination, competing priorities. Meeting Prep Generator still viable. Pattern: assistants price-sensitive but time savings = direct value.",
           "source": "api"
         }
       ]
