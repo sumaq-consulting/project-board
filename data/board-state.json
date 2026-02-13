@@ -360,11 +360,17 @@
       ],
       "questionsForHuman": [],
       "createdAt": "2026-01-30T11:35:00Z",
-      "updatedAt": "2026-02-12T10:59:18.766Z",
+      "updatedAt": "2026-02-13T04:01:32.833Z",
       "summaryUrl": "https://docs.google.com/spreadsheets/d/1VlyKFRN8fVg-4gFYwVWIkSvyNMwS1d_mROlGouVTd6s/edit",
-      "lastActivity": "Jobber pricing research: Lite $19/mo (1 user, basic), Core $39-69/mo (solo), Connect/Grow $129-599/mo (teams). Gap confirmed: $3-5/mo voice-to-invoice tool fits well below Jobber Lite. Target users: solo tradespeople who just need voice→invoice, not full FSM suite.",
-      "lastActivityAt": "2026-02-12T10:59:18.766Z",
+      "lastActivity": "Competitor deep-dive: Invoice Fly $52-99/mo, InvoiceCue freemium, Jobber $19+. NONE have voice-to-invoice. Gap validated: no $3-5/mo voice-to-invoice for solo trades exists. Key insight: all assume manual typing/tapping on mobile. Voice input while driving is untapped.",
+      "lastActivityAt": "2026-02-13T04:01:32.833Z",
       "activityLog": [
+        {
+          "timestamp": "2026-02-13T04:01:32.833Z",
+          "action": "note",
+          "description": "Competitor deep-dive: Invoice Fly $52-99/mo, InvoiceCue freemium, Jobber $19+. NONE have voice-to-invoice. Gap validated: no $3-5/mo voice-to-invoice for solo trades exists. Key insight: all assume manual typing/tapping on mobile. Voice input while driving is untapped.",
+          "source": "api"
+        },
         {
           "timestamp": "2026-02-12T10:59:18.766Z",
           "action": "note",
@@ -417,12 +423,6 @@
           "timestamp": "2026-02-06T11:29:35.161Z",
           "action": "note",
           "description": "Researched trades (plumber/electrician) subreddits. Key insight: complaint is complexity/cost of big tools (Service Titan). Opportunity: single-purpose features those tools do poorly (job pricing history, simple profit tracking).",
-          "source": "api"
-        },
-        {
-          "timestamp": "2026-02-06T04:31:18.758Z",
-          "action": "note",
-          "description": "Eliminated Meeting Prep Generator (MeetingIQ free competitor). Down to 2 viable ideas. Pivoting to boring industries thesis: trades, local services, spreadsheet hell.",
           "source": "api"
         }
       ]
