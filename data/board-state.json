@@ -360,11 +360,17 @@
       ],
       "questionsForHuman": [],
       "createdAt": "2026-01-30T11:35:00Z",
-      "updatedAt": "2026-02-13T04:01:32.833Z",
+      "updatedAt": "2026-02-14T04:30:02.119Z",
       "summaryUrl": "https://docs.google.com/spreadsheets/d/1VlyKFRN8fVg-4gFYwVWIkSvyNMwS1d_mROlGouVTd6s/edit",
-      "lastActivity": "Competitor deep-dive: Invoice Fly $52-99/mo, InvoiceCue freemium, Jobber $19+. NONE have voice-to-invoice. Gap validated: no $3-5/mo voice-to-invoice for solo trades exists. Key insight: all assume manual typing/tapping on mobile. Voice input while driving is untapped.",
-      "lastActivityAt": "2026-02-13T04:01:32.833Z",
+      "lastActivity": "Feb 14 research: Confirmed gap - searched 8 plumbing invoice tools (ServiceTitan, Workiz, Zoho, Tofu, etc). NONE mention voice input. All assume typing on mobile. Voice-to-invoice while driving remains untapped. Drafted tracer bullet concept: VoiceInvoice $5/mo.",
+      "lastActivityAt": "2026-02-14T04:30:02.119Z",
       "activityLog": [
+        {
+          "timestamp": "2026-02-14T04:30:02.119Z",
+          "action": "note",
+          "description": "Feb 14 research: Confirmed gap - searched 8 plumbing invoice tools (ServiceTitan, Workiz, Zoho, Tofu, etc). NONE mention voice input. All assume typing on mobile. Voice-to-invoice while driving remains untapped. Drafted tracer bullet concept: VoiceInvoice $5/mo.",
+          "source": "api"
+        },
         {
           "timestamp": "2026-02-13T04:01:32.833Z",
           "action": "note",
@@ -417,12 +423,6 @@
           "timestamp": "2026-02-08T04:01:55.615Z",
           "action": "note",
           "description": "Researched trades software complaints. Key insight: big tools are \"overkill\" - giving Ferrari to pickup truck needs. Identified 5 new candidates: Job Pricer, Text Reminder, Photo Archive, Solo Profit Tracker, Material Estimator. All target $3-5/mo.",
-          "source": "api"
-        },
-        {
-          "timestamp": "2026-02-06T11:29:35.161Z",
-          "action": "note",
-          "description": "Researched trades (plumber/electrician) subreddits. Key insight: complaint is complexity/cost of big tools (Service Titan). Opportunity: single-purpose features those tools do poorly (job pricing history, simple profit tracking).",
           "source": "api"
         }
       ]
