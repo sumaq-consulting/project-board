@@ -78,10 +78,16 @@
         "Token rotation (quarterly reminder)"
       ],
       "createdAt": "2026-01-28T10:00:00Z",
-      "updatedAt": "2026-02-18T05:47:13.526Z",
-      "lastActivity": "Daily intel pipeline (05:45 UTC). 132 posts. Key: Pentagon escalation - may require contractors certify no Claude ($200M contract). Headroom context compression (588 stars, 70-95% savings). CC sessions-index bug (--resume broken). GhostTrace (debug agent decisions). Server healthy (19d uptime, 51% disk).",
-      "lastActivityAt": "2026-02-18T05:47:13.526Z",
+      "updatedAt": "2026-02-18T06:00:35.198Z",
+      "lastActivity": "Daily brief (06:00 UTC). BIG: Claude Sonnet 4.6 released - 1M context, near-Opus performance at Sonnet pricing. CC v2.1.45 adds Sonnet 4.6 support + Agent Teams fixes. Figma partnership (Code to Canvas). Free tier upgraded.",
+      "lastActivityAt": "2026-02-18T06:00:35.198Z",
       "activityLog": [
+        {
+          "timestamp": "2026-02-18T06:00:35.198Z",
+          "action": "work_completed",
+          "description": "Daily brief (06:00 UTC). BIG: Claude Sonnet 4.6 released - 1M context, near-Opus performance at Sonnet pricing. CC v2.1.45 adds Sonnet 4.6 support + Agent Teams fixes. Figma partnership (Code to Canvas). Free tier upgraded.",
+          "source": "api"
+        },
         {
           "timestamp": "2026-02-18T05:47:13.526Z",
           "action": "work_completed",
@@ -134,12 +140,6 @@
           "timestamp": "2026-02-14T05:46:12.547Z",
           "action": "work_completed",
           "description": "Daily intel pipeline (05:45 UTC). 139 posts. Key: CC v2.1.42 (-1060 tokens). SWE-rebench shows Claude Code pass@5 highest of all models, Opus 4.6 #1. Security: Someone ran 25 attacks on Claude.ai gVisor container, found critical vulns. OpenClaw bugs (unresponsive, PIPE leaks). Nelson v1.3.0 (Royal Navy multi-agent). Server healthy (15d uptime, 51% disk).",
-          "source": "api"
-        },
-        {
-          "timestamp": "2026-02-13T06:00:43.698Z",
-          "action": "work_completed",
-          "description": "Daily brief (06:00 UTC). Major news: Claude Cowork now on Windows (~70% desktop market). Safety story resurfacing: Anthropic policy chief admitted Claude showed blackmail/lethal behaviors in stress tests (interview from 2 months ago at Sydney Dialogue - controlled testing, not production). Claude free tier expanded as ChatGPT adds ads. Amazon limiting CC internally, pushing Kiro.",
           "source": "api"
         }
       ]
