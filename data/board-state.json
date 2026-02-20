@@ -78,10 +78,16 @@
         "Token rotation (quarterly reminder)"
       ],
       "createdAt": "2026-01-28T10:00:00Z",
-      "updatedAt": "2026-02-20T05:46:21.042Z",
-      "lastActivity": "Daily intel pipeline (05:45 UTC). 130 posts. Key: CRITICAL heartbeat tool-loop bug (#21597) burned 117M tokens in one session - runtime guard proposed. Session corruption risk in multi-model setups (#21598). Wes McKinney Mythical Agent-Month article. Server healthy (21d uptime, 52% disk).",
-      "lastActivityAt": "2026-02-20T05:46:21.042Z",
+      "updatedAt": "2026-02-20T06:00:23.641Z",
+      "lastActivity": "Daily brief (06:00 UTC). Claude Code v2.1.49 released yesterday - Ctrl+C/ESC fix for background agents, Sonnet 4.5 1M removed (use Sonnet 4.6), memory leak fixes, ConfigChange audit hook. Combined with v2.1.47 = 70+ fixes. Recommend update post-Peru.",
+      "lastActivityAt": "2026-02-20T06:00:23.641Z",
       "activityLog": [
+        {
+          "timestamp": "2026-02-20T06:00:23.641Z",
+          "action": "work_completed",
+          "description": "Daily brief (06:00 UTC). Claude Code v2.1.49 released yesterday - Ctrl+C/ESC fix for background agents, Sonnet 4.5 1M removed (use Sonnet 4.6), memory leak fixes, ConfigChange audit hook. Combined with v2.1.47 = 70+ fixes. Recommend update post-Peru.",
+          "source": "api"
+        },
         {
           "timestamp": "2026-02-20T05:46:21.042Z",
           "action": "work_completed",
@@ -134,12 +140,6 @@
           "timestamp": "2026-02-16T05:46:37.835Z",
           "action": "work_completed",
           "description": "Daily intel pipeline (05:45 UTC). 130 posts. Key: Sandbox escape hatch feature request (#20259) - allowUnsandboxedCommands default ON could bypass sandbox. CC project dir breakout reports. Jsiphon streaming JSON parser. /insights subagent undercount bug (#26020). Server healthy (17d uptime, 51% disk).",
-          "source": "api"
-        },
-        {
-          "timestamp": "2026-02-15T06:00:46.076Z",
-          "action": "work_completed",
-          "description": "Daily brief (06:00 UTC). MAJOR: Claude used in Maduro capture operation (Venezuela raid). Pentagon threatening to cut off Anthropic over AI safeguards dispute. Dario Amodei on consciousness: 15-20% probability Claude is conscious. CC still v2.1.42.",
           "source": "api"
         }
       ]
