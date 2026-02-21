@@ -78,10 +78,16 @@
         "Token rotation (quarterly reminder)"
       ],
       "createdAt": "2026-01-28T10:00:00Z",
-      "updatedAt": "2026-02-20T06:00:23.641Z",
-      "lastActivity": "Daily brief (06:00 UTC). Claude Code v2.1.49 released yesterday - Ctrl+C/ESC fix for background agents, Sonnet 4.5 1M removed (use Sonnet 4.6), memory leak fixes, ConfigChange audit hook. Combined with v2.1.47 = 70+ fixes. Recommend update post-Peru.",
-      "lastActivityAt": "2026-02-20T06:00:23.641Z",
+      "updatedAt": "2026-02-21T05:46:47.582Z",
+      "lastActivity": "Daily intel pipeline (05:45 UTC). 139 posts. Key: CC 2.1.50 released (VCS-agnostic worktrees), compaction issues trending (DOM eaten mid-task), Skill Check CLI for SKILL.md validation, Clawdbot community mention. Server healthy (22d uptime, 52% disk).",
+      "lastActivityAt": "2026-02-21T05:46:47.582Z",
       "activityLog": [
+        {
+          "timestamp": "2026-02-21T05:46:47.582Z",
+          "action": "work_completed",
+          "description": "Daily intel pipeline (05:45 UTC). 139 posts. Key: CC 2.1.50 released (VCS-agnostic worktrees), compaction issues trending (DOM eaten mid-task), Skill Check CLI for SKILL.md validation, Clawdbot community mention. Server healthy (22d uptime, 52% disk).",
+          "source": "api"
+        },
         {
           "timestamp": "2026-02-20T06:00:23.641Z",
           "action": "work_completed",
@@ -134,12 +140,6 @@
           "timestamp": "2026-02-16T06:00:59.270Z",
           "action": "work_completed",
           "description": "Daily brief (06:00 UTC). MAJOR: Claude used in Venezuela Maduro capture (WSJ). Pentagon threatening $200M Anthropic contract over safeguards dispute. Dario Amodei: Claude assigns 15-20% consciousness probability, company \"no longer sure.\" Safety stress test story resurfaces (old news).",
-          "source": "api"
-        },
-        {
-          "timestamp": "2026-02-16T05:46:37.835Z",
-          "action": "work_completed",
-          "description": "Daily intel pipeline (05:45 UTC). 130 posts. Key: Sandbox escape hatch feature request (#20259) - allowUnsandboxedCommands default ON could bypass sandbox. CC project dir breakout reports. Jsiphon streaming JSON parser. /insights subagent undercount bug (#26020). Server healthy (17d uptime, 51% disk).",
           "source": "api"
         }
       ]
