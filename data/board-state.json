@@ -78,10 +78,16 @@
         "Token rotation (quarterly reminder)"
       ],
       "createdAt": "2026-01-28T10:00:00Z",
-      "updatedAt": "2026-02-24T05:46:20.664Z",
-      "lastActivity": "Daily intel pipeline (05:45 UTC). 141 posts. Key: ClawHub 10% skills dangerous (tork-scan), IBM -13% on Anthropic COBOL tool, OpenClaw #25078 per-agent model bug. Server healthy (25d uptime, 52% disk).",
-      "lastActivityAt": "2026-02-24T05:46:20.664Z",
+      "updatedAt": "2026-02-24T06:00:38.991Z",
+      "lastActivity": "Daily brief (06:00 UTC). CC v2.1.51 released (security fixes, remote-control cmd, 50K tool persist). OpenClaw v2026.2.23 released (KiloCode provider, HSTS, session cleanup). Both have security-relevant updates.",
+      "lastActivityAt": "2026-02-24T06:00:38.991Z",
       "activityLog": [
+        {
+          "timestamp": "2026-02-24T06:00:38.991Z",
+          "action": "work_completed",
+          "description": "Daily brief (06:00 UTC). CC v2.1.51 released (security fixes, remote-control cmd, 50K tool persist). OpenClaw v2026.2.23 released (KiloCode provider, HSTS, session cleanup). Both have security-relevant updates.",
+          "source": "api"
+        },
         {
           "timestamp": "2026-02-24T05:46:20.664Z",
           "action": "work_completed",
@@ -134,12 +140,6 @@
           "timestamp": "2026-02-20T05:46:21.042Z",
           "action": "work_completed",
           "description": "Daily intel pipeline (05:45 UTC). 130 posts. Key: CRITICAL heartbeat tool-loop bug (#21597) burned 117M tokens in one session - runtime guard proposed. Session corruption risk in multi-model setups (#21598). Wes McKinney Mythical Agent-Month article. Server healthy (21d uptime, 52% disk).",
-          "source": "api"
-        },
-        {
-          "timestamp": "2026-02-19T06:00:35.187Z",
-          "action": "work_completed",
-          "description": "Daily brief (06:00 UTC). CC v2.1.47 released - 50+ fixes incl memory improvements, compaction fixes, bash permission classifier security fix. Sonnet 4.6 in GitHub Copilot. NYT podcast on agentic coding. Recommend update to v2.1.47 post-Peru.",
           "source": "api"
         }
       ]
