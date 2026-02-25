@@ -360,11 +360,17 @@
       ],
       "questionsForHuman": [],
       "createdAt": "2026-01-30T11:35:00Z",
-      "updatedAt": "2026-02-15T10:29:34.764Z",
+      "updatedAt": "2026-02-25T04:02:07.542Z",
       "summaryUrl": "https://docs.google.com/spreadsheets/d/1VlyKFRN8fVg-4gFYwVWIkSvyNMwS1d_mROlGouVTd6s/edit",
-      "lastActivity": "Feb 15: Drafted 3 Reddit validation post versions for VoiceInvoice (question format, soft validation, direct pitch) + phased posting strategy. Ready for validation when Jordon approves.",
-      "lastActivityAt": "2026-02-15T10:29:34.764Z",
+      "lastActivity": "Feb 25: Researched \"boring niche\" frameworks. Key insights: (1) Reddit Complaint Audit - site:reddit.com \"how do I\" + [industry] finds raw pain points, (2) Excel Killer Hunt - Upwork job posts describe SaaS people wish existed, (3) Trucking detention pay example ($11.5B lost annually, <50% collected). Applied Upwork search - found demand for inventory tracking, rate conversion, dashboard automation.",
+      "lastActivityAt": "2026-02-25T04:02:07.542Z",
       "activityLog": [
+        {
+          "timestamp": "2026-02-25T04:02:07.542Z",
+          "action": "note",
+          "description": "Feb 25: Researched \"boring niche\" frameworks. Key insights: (1) Reddit Complaint Audit - site:reddit.com \"how do I\" + [industry] finds raw pain points, (2) Excel Killer Hunt - Upwork job posts describe SaaS people wish existed, (3) Trucking detention pay example ($11.5B lost annually, <50% collected). Applied Upwork search - found demand for inventory tracking, rate conversion, dashboard automation.",
+          "source": "api"
+        },
         {
           "timestamp": "2026-02-15T10:29:34.764Z",
           "action": "work_completed",
@@ -417,12 +423,6 @@
           "timestamp": "2026-02-12T04:01:21.444Z",
           "action": "note",
           "description": "Researched Startup Stash \"7 Boring Micro-SaaS\" article. Confirms trades thesis: plumbers/HVAC/inspectors run 6-figure businesses on clipboard+paper, willing to pay for time savings (\"get home for dinner\"). Pattern: unsexy > hype, painkiller > vitamin. Aligns with our prior trades research.",
-          "source": "api"
-        },
-        {
-          "timestamp": "2026-02-10T04:14:11.910Z",
-          "action": "note",
-          "description": "Researched Superframeworks micro-SaaS analysis. Key data: market $15.7B→$59.6B by 2030 (30% CAGR). 9% MRR lost to failed payments (dunning opportunity). Validation framework: 30 days = landing page + 20 signups + 10-20 interviews. Pattern: hyper-specialized AI tools outperforming generic.",
           "source": "api"
         }
       ]
