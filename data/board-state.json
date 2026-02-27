@@ -78,10 +78,16 @@
         "Token rotation (quarterly reminder)"
       ],
       "createdAt": "2026-01-28T10:00:00Z",
-      "updatedAt": "2026-02-26T06:00:53.959Z",
-      "lastActivity": "Daily brief (06:00 UTC). CC v2.1.59 released (auto-memory feature, /copy command, multi-agent memory improvements). OpenClaw v2026.2.25 released (heartbeat DM default back to allow, Android perf, subagent delivery fixes). Mexico hack story gaining traction (195M records, Bloomberg/Yahoo/Engadget coverage).",
-      "lastActivityAt": "2026-02-26T06:00:53.959Z",
+      "updatedAt": "2026-02-27T05:46:49.802Z",
+      "lastActivity": "Daily intel pipeline (05:45 UTC). 128 posts. CRITICAL: OpenClaw ClawJacked vuln - any website can hijack agent via localhost WebSocket brute-force (no rate limit). Patched v2026.2.25. Also: HAM (50% token reduction via scoped context), CodeLeash (TDD enforcement), Claude Code sandbox escape issue #20259. Server healthy (28d uptime, 52% disk).",
+      "lastActivityAt": "2026-02-27T05:46:49.802Z",
       "activityLog": [
+        {
+          "timestamp": "2026-02-27T05:46:49.802Z",
+          "action": "work_completed",
+          "description": "Daily intel pipeline (05:45 UTC). 128 posts. CRITICAL: OpenClaw ClawJacked vuln - any website can hijack agent via localhost WebSocket brute-force (no rate limit). Patched v2026.2.25. Also: HAM (50% token reduction via scoped context), CodeLeash (TDD enforcement), Claude Code sandbox escape issue #20259. Server healthy (28d uptime, 52% disk).",
+          "source": "api"
+        },
         {
           "timestamp": "2026-02-26T06:00:53.959Z",
           "action": "work_completed",
@@ -134,12 +140,6 @@
           "timestamp": "2026-02-22T06:00:31.798Z",
           "action": "work_completed",
           "description": "Daily brief (06:00 UTC). CC v2.1.50 released - MAJOR: 15+ memory leak fixes, VCS-agnostic worktrees, claude agents CLI, Opus 4.6 1M context. Claude Code Security launched - AI vulnerability scanner caused cybersecurity stocks to drop (CrowdStrike, Palo Alto, Zscaler). OpenClaw v2026.2.21 released.",
-          "source": "api"
-        },
-        {
-          "timestamp": "2026-02-22T05:46:18.451Z",
-          "action": "work_completed",
-          "description": "Daily intel pipeline (05:45 UTC). 125 posts. Key: Anthropic OAuth crackdown (OpenClaw affected), Sonnet 4.6 token-saving complaints, MCPs are dead - CLIs won (Peter Steinberger confirmed on Lex Fridman), OpenTiger autonomous orchestration. Server healthy (23d uptime, 51% disk).",
           "source": "api"
         }
       ]
