@@ -78,10 +78,16 @@
         "Token rotation (quarterly reminder)"
       ],
       "createdAt": "2026-01-28T10:00:00Z",
-      "updatedAt": "2026-02-28T06:00:22.193Z",
-      "lastActivity": "Daily brief (06:00 UTC). CC v2.1.63 released: /simplify + /batch commands, HTTP hooks, git worktree config sharing, MCP OAuth fallback, 10+ memory leak fixes. No new Clawdbot releases.",
-      "lastActivityAt": "2026-02-28T06:00:22.193Z",
+      "updatedAt": "2026-03-01T05:46:33.704Z",
+      "lastActivity": "Daily intel pipeline (05:45 UTC). 139 posts. Key: SpecLock (AI constraint enforcement), Swarms RCE vuln, CC v2.1.63 (10+ memory leak fixes, /simplify, /batch, HTTP hooks). Server healthy (30d uptime, 51% disk).",
+      "lastActivityAt": "2026-03-01T05:46:33.704Z",
       "activityLog": [
+        {
+          "timestamp": "2026-03-01T05:46:33.704Z",
+          "action": "work_completed",
+          "description": "Daily intel pipeline (05:45 UTC). 139 posts. Key: SpecLock (AI constraint enforcement), Swarms RCE vuln, CC v2.1.63 (10+ memory leak fixes, /simplify, /batch, HTTP hooks). Server healthy (30d uptime, 51% disk).",
+          "source": "api"
+        },
         {
           "timestamp": "2026-02-28T06:00:22.193Z",
           "action": "work_completed",
@@ -134,12 +140,6 @@
           "timestamp": "2026-02-24T06:00:38.991Z",
           "action": "work_completed",
           "description": "Daily brief (06:00 UTC). CC v2.1.51 released (security fixes, remote-control cmd, 50K tool persist). OpenClaw v2026.2.23 released (KiloCode provider, HSTS, session cleanup). Both have security-relevant updates.",
-          "source": "api"
-        },
-        {
-          "timestamp": "2026-02-24T05:46:20.664Z",
-          "action": "work_completed",
-          "description": "Daily intel pipeline (05:45 UTC). 141 posts. Key: ClawHub 10% skills dangerous (tork-scan), IBM -13% on Anthropic COBOL tool, OpenClaw #25078 per-agent model bug. Server healthy (25d uptime, 52% disk).",
           "source": "api"
         }
       ]
