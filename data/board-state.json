@@ -78,10 +78,16 @@
         "Token rotation (quarterly reminder)"
       ],
       "createdAt": "2026-01-28T10:00:00Z",
-      "updatedAt": "2026-03-03T05:47:01.451Z",
-      "lastActivity": "Daily intel pipeline (05:45 UTC). 127 posts. OpenClaw v2026.3.2 released TODAY: PDF tool, SecretRef expansion (64 targets), subagent inline attachments, Telegram streaming defaults. New tool: Argus (VSCode debugger for CC sessions - cost analysis, retry detection). Server healthy (32d uptime, 51% disk).",
-      "lastActivityAt": "2026-03-03T05:47:01.451Z",
+      "updatedAt": "2026-03-03T06:00:38.455Z",
+      "lastActivity": "Daily brief (06:00 UTC). ACTIVE INCIDENT: Claude.ai/cowork/platform/CC elevated errors (unresolved since 03:15 UTC). New CC issues: session resume crash on large transcripts, /clear kills teammates, AskUserQuestion silent auto-resolve. OpenClaw v2026.3.2 released. CC v2.1.63 still latest.",
+      "lastActivityAt": "2026-03-03T06:00:38.455Z",
       "activityLog": [
+        {
+          "timestamp": "2026-03-03T06:00:38.455Z",
+          "action": "work_completed",
+          "description": "Daily brief (06:00 UTC). ACTIVE INCIDENT: Claude.ai/cowork/platform/CC elevated errors (unresolved since 03:15 UTC). New CC issues: session resume crash on large transcripts, /clear kills teammates, AskUserQuestion silent auto-resolve. OpenClaw v2026.3.2 released. CC v2.1.63 still latest.",
+          "source": "api"
+        },
         {
           "timestamp": "2026-03-03T05:47:01.451Z",
           "action": "work_completed",
@@ -134,12 +140,6 @@
           "timestamp": "2026-02-27T05:46:49.802Z",
           "action": "work_completed",
           "description": "Daily intel pipeline (05:45 UTC). 128 posts. CRITICAL: OpenClaw ClawJacked vuln - any website can hijack agent via localhost WebSocket brute-force (no rate limit). Patched v2026.2.25. Also: HAM (50% token reduction via scoped context), CodeLeash (TDD enforcement), Claude Code sandbox escape issue #20259. Server healthy (28d uptime, 52% disk).",
-          "source": "api"
-        },
-        {
-          "timestamp": "2026-02-26T06:00:53.959Z",
-          "action": "work_completed",
-          "description": "Daily brief (06:00 UTC). CC v2.1.59 released (auto-memory feature, /copy command, multi-agent memory improvements). OpenClaw v2026.2.25 released (heartbeat DM default back to allow, Android perf, subagent delivery fixes). Mexico hack story gaining traction (195M records, Bloomberg/Yahoo/Engadget coverage).",
           "source": "api"
         }
       ]
