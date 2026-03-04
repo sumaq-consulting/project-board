@@ -78,10 +78,16 @@
         "Token rotation (quarterly reminder)"
       ],
       "createdAt": "2026-01-28T10:00:00Z",
-      "updatedAt": "2026-03-03T06:00:38.455Z",
-      "lastActivity": "Daily brief (06:00 UTC). ACTIVE INCIDENT: Claude.ai/cowork/platform/CC elevated errors (unresolved since 03:15 UTC). New CC issues: session resume crash on large transcripts, /clear kills teammates, AskUserQuestion silent auto-resolve. OpenClaw v2026.3.2 released. CC v2.1.63 still latest.",
-      "lastActivityAt": "2026-03-03T06:00:38.455Z",
+      "updatedAt": "2026-03-04T05:47:10.470Z",
+      "lastActivity": "Daily intel pipeline (05:45 UTC). 145 posts. Key: Claude remote tab opening concern (browser control persisting on logged-in machines), SeekerClaw sandbox escape, HumanRoot (delegation certificates for agents), MachineAuth (OAuth for AI). New tools: cicada (CC usage TUI), cocoindex-code (AST-based MCP). Concept: Post-Visual Web - websites as semantic data for LLMs. Server healthy (33d uptime, 51% disk).",
+      "lastActivityAt": "2026-03-04T05:47:10.470Z",
       "activityLog": [
+        {
+          "timestamp": "2026-03-04T05:47:10.470Z",
+          "action": "work_completed",
+          "description": "Daily intel pipeline (05:45 UTC). 145 posts. Key: Claude remote tab opening concern (browser control persisting on logged-in machines), SeekerClaw sandbox escape, HumanRoot (delegation certificates for agents), MachineAuth (OAuth for AI). New tools: cicada (CC usage TUI), cocoindex-code (AST-based MCP). Concept: Post-Visual Web - websites as semantic data for LLMs. Server healthy (33d uptime, 51% disk).",
+          "source": "api"
+        },
         {
           "timestamp": "2026-03-03T06:00:38.455Z",
           "action": "work_completed",
@@ -134,12 +140,6 @@
           "timestamp": "2026-02-27T06:00:42.319Z",
           "action": "work_completed",
           "description": "Daily brief (06:00 UTC). CC v2.1.62 released (cache regression fix). CC v2.1.61 (Windows config corruption fix). OpenClaw v2026.2.25 confirms security hardening for ClawJacked vuln.",
-          "source": "api"
-        },
-        {
-          "timestamp": "2026-02-27T05:46:49.802Z",
-          "action": "work_completed",
-          "description": "Daily intel pipeline (05:45 UTC). 128 posts. CRITICAL: OpenClaw ClawJacked vuln - any website can hijack agent via localhost WebSocket brute-force (no rate limit). Patched v2026.2.25. Also: HAM (50% token reduction via scoped context), CodeLeash (TDD enforcement), Claude Code sandbox escape issue #20259. Server healthy (28d uptime, 52% disk).",
           "source": "api"
         }
       ]
