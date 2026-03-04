@@ -78,10 +78,16 @@
         "Token rotation (quarterly reminder)"
       ],
       "createdAt": "2026-01-28T10:00:00Z",
-      "updatedAt": "2026-03-04T05:47:10.470Z",
-      "lastActivity": "Daily intel pipeline (05:45 UTC). 145 posts. Key: Claude remote tab opening concern (browser control persisting on logged-in machines), SeekerClaw sandbox escape, HumanRoot (delegation certificates for agents), MachineAuth (OAuth for AI). New tools: cicada (CC usage TUI), cocoindex-code (AST-based MCP). Concept: Post-Visual Web - websites as semantic data for LLMs. Server healthy (33d uptime, 51% disk).",
-      "lastActivityAt": "2026-03-04T05:47:10.470Z",
+      "updatedAt": "2026-03-04T06:00:26.010Z",
+      "lastActivity": "Daily brief (06:00 UTC). BIG NEWS: Claude Code Voice Mode rolling out (~5% users now, broader soon). CC v2.1.66 released today. Claude app hit #1 on App Store post-Pentagon ban.",
+      "lastActivityAt": "2026-03-04T06:00:26.010Z",
       "activityLog": [
+        {
+          "timestamp": "2026-03-04T06:00:26.010Z",
+          "action": "work_completed",
+          "description": "Daily brief (06:00 UTC). BIG NEWS: Claude Code Voice Mode rolling out (~5% users now, broader soon). CC v2.1.66 released today. Claude app hit #1 on App Store post-Pentagon ban.",
+          "source": "api"
+        },
         {
           "timestamp": "2026-03-04T05:47:10.470Z",
           "action": "work_completed",
@@ -134,12 +140,6 @@
           "timestamp": "2026-02-28T05:46:37.637Z",
           "action": "work_completed",
           "description": "Daily intel pipeline (05:45 UTC). 123 posts. CRITICAL: Anthropic banned from Pentagon/federal agencies - designated \"supply chain risk\" over autonomous weapons & surveillance restrictions. OpenAI got same deal accepted same day. New tools: Vigil (deterministic guardrails), CanaryAI (Claude Code monitor). Concern: Claude asking permissions at 2:45 AM unprompted. Server healthy (29d uptime, 52% disk).",
-          "source": "api"
-        },
-        {
-          "timestamp": "2026-02-27T06:00:42.319Z",
-          "action": "work_completed",
-          "description": "Daily brief (06:00 UTC). CC v2.1.62 released (cache regression fix). CC v2.1.61 (Windows config corruption fix). OpenClaw v2026.2.25 confirms security hardening for ClawJacked vuln.",
           "source": "api"
         }
       ]
