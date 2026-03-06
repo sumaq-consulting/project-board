@@ -360,11 +360,17 @@
       ],
       "questionsForHuman": [],
       "createdAt": "2026-01-30T11:35:00Z",
-      "updatedAt": "2026-03-06T04:04:05.290Z",
+      "updatedAt": "2026-03-06T11:02:50.930Z",
       "summaryUrl": "https://docs.google.com/spreadsheets/d/1VlyKFRN8fVg-4gFYwVWIkSvyNMwS1d_mROlGouVTd6s/edit",
-      "lastActivity": "Mar 6: Reddit complaint audit on invoicing/freelance. Patterns: (1) Noobs overwhelmed by existing tools - need simpler \"just invoice\" solution, (2) Payment slip-through cracks - reminder/tracking gap, (3) Time tracking + invoicing separate = friction. Existing solutions (FreshBooks, Harvest, QuickBooks) have feature bloat. Gap: ultra-simple $3-5/mo \"invoice + nudge\" for first-time freelancers.",
-      "lastActivityAt": "2026-03-06T04:04:05.290Z",
+      "lastActivity": "Mar 6 (11:02 UTC): Deep dive on payment chasing pain. STRONG SIGNAL: (1) 30% non-payment rate cited, (2) Chasing emotionally draining - \"awkward\", (3) Small claims not worth it for small invoices, (4) Explicit request for automation: \"automated system to follow up with unpaid invoices\". Gap: Auto-escalation reminders that handle the awkward part. Freelancer sets it, forgets it, tool does friendly→firm→threat ladder.",
+      "lastActivityAt": "2026-03-06T11:02:50.930Z",
       "activityLog": [
+        {
+          "timestamp": "2026-03-06T11:02:50.930Z",
+          "action": "note",
+          "description": "Mar 6 (11:02 UTC): Deep dive on payment chasing pain. STRONG SIGNAL: (1) 30% non-payment rate cited, (2) Chasing emotionally draining - \"awkward\", (3) Small claims not worth it for small invoices, (4) Explicit request for automation: \"automated system to follow up with unpaid invoices\". Gap: Auto-escalation reminders that handle the awkward part. Freelancer sets it, forgets it, tool does friendly→firm→threat ladder.",
+          "source": "api"
+        },
         {
           "timestamp": "2026-03-06T04:04:05.290Z",
           "action": "note",
@@ -417,12 +423,6 @@
           "timestamp": "2026-02-12T07:59:25.881Z",
           "action": "note",
           "description": "Medium article validates trades thesis. Top idea: Voice-to-Task for Field Techs - plumbers/HVAC/electricians speak updates while driving, AI parses into invoice line items. Quote: \"Most successful micro SaaS 2026 are built by people who understand workflow of plumber/lawyer/florist, not C++.\" Also: local compliance tracker, ghost kitchen inventory, B2B video repurposer.",
-          "source": "api"
-        },
-        {
-          "timestamp": "2026-02-12T05:29:25.292Z",
-          "action": "note",
-          "description": "Analyzed RockingWeb 1,000 Micro-SaaS Revenue Study. Key data: 70% earn <$1k/mo BUT 95% profitable in 12mo. Winners: Email tools ($4.2k median), Dev APIs ($3.8k). Best pricing: hybrid (sub+usage) = 21% growth. Freemium converts only 3.7%. Single channel focus beats diversification (40% rely on one organic channel). Domain expertise = 2x success rate. AI-native = 2x faster growth.",
           "source": "api"
         }
       ]
