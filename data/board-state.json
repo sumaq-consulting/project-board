@@ -360,11 +360,17 @@
       ],
       "questionsForHuman": [],
       "createdAt": "2026-01-30T11:35:00Z",
-      "updatedAt": "2026-03-06T11:02:50.930Z",
+      "updatedAt": "2026-03-06T16:02:53.351Z",
       "summaryUrl": "https://docs.google.com/spreadsheets/d/1VlyKFRN8fVg-4gFYwVWIkSvyNMwS1d_mROlGouVTd6s/edit",
-      "lastActivity": "Mar 6 (11:02 UTC): Deep dive on payment chasing pain. STRONG SIGNAL: (1) 30% non-payment rate cited, (2) Chasing emotionally draining - \"awkward\", (3) Small claims not worth it for small invoices, (4) Explicit request for automation: \"automated system to follow up with unpaid invoices\". Gap: Auto-escalation reminders that handle the awkward part. Freelancer sets it, forgets it, tool does friendly→firm→threat ladder.",
-      "lastActivityAt": "2026-03-06T11:02:50.930Z",
+      "lastActivity": "Mar 6 (16:02 UTC): Competitor analysis for invoice reminders. FOUND: PayReminderPro (40 waitlist, early) - validates concept but shows competition. Big players (Wave, Invoicera, Billdu) have reminders built-in. KEY INSIGHT: Integration gap - freelancers already have invoicing tools, dont want to switch. Opportunity: reminder layer that works WITH existing setup (forward invoice, track via Gmail/spreadsheet). No platform lock-in.",
+      "lastActivityAt": "2026-03-06T16:02:53.351Z",
       "activityLog": [
+        {
+          "timestamp": "2026-03-06T16:02:53.351Z",
+          "action": "note",
+          "description": "Mar 6 (16:02 UTC): Competitor analysis for invoice reminders. FOUND: PayReminderPro (40 waitlist, early) - validates concept but shows competition. Big players (Wave, Invoicera, Billdu) have reminders built-in. KEY INSIGHT: Integration gap - freelancers already have invoicing tools, dont want to switch. Opportunity: reminder layer that works WITH existing setup (forward invoice, track via Gmail/spreadsheet). No platform lock-in.",
+          "source": "api"
+        },
         {
           "timestamp": "2026-03-06T11:02:50.930Z",
           "action": "note",
@@ -417,12 +423,6 @@
           "timestamp": "2026-02-12T09:29:30.010Z",
           "action": "note",
           "description": "HVAC software landscape research. Market segmented: ServiceTitan (residential high-volume), FIELDBOSS (commercial/ERP), Jobber (small teams/simplicity). Gap: solo tradespeople below Jobber tier. Sera Systems mentioned as \"built by plumber himself\" with good support - validates founder-domain-expertise thesis. Voice-to-invoice could fit below Jobber.",
-          "source": "api"
-        },
-        {
-          "timestamp": "2026-02-12T07:59:25.881Z",
-          "action": "note",
-          "description": "Medium article validates trades thesis. Top idea: Voice-to-Task for Field Techs - plumbers/HVAC/electricians speak updates while driving, AI parses into invoice line items. Quote: \"Most successful micro SaaS 2026 are built by people who understand workflow of plumber/lawyer/florist, not C++.\" Also: local compliance tracker, ghost kitchen inventory, B2B video repurposer.",
           "source": "api"
         }
       ]
